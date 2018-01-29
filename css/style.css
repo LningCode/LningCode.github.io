@@ -1,0 +1,522 @@
+.content-view .topmin-10{
+	margin-top: 10px;
+}
+.content-view .alert-30 .mui-table-view-cell:after{
+	left: 54px;
+}
+.mui-table-view-cell .moreimg{
+	display: inline-block;
+	width: 28px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.mui-table-view-cell{
+	padding: 12px 15px;
+}
+.mui-table-view-cell .mui-badge{
+	background: none;
+	color: #b2b2b2;
+}
+.user-hd-block{
+	background: #fff;
+}
+.row-table.hd-table{
+	position: relative;
+	width: 100%;
+}
+.row-table.hd-table img{
+	display: block;
+	width: 100%;
+}
+.row-table.hd-table .user-pic{
+	position: absolute;
+    border: 3px solid #d3ae5d;
+    display: block;
+    width: 26%;
+    border-radius: 100%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -13%;
+}
+.row-table.hd-table .user-pic img{
+	border-radius: 100%;
+}
+.row-table.bar-table{
+	width: 100%;
+	display: flex;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+}
+.row-table.bar-table .row-col{
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 15px;
+    color: #8f8f94;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.bar-table .row-col p{
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+}
+.bar-table .row-col span{
+	color: #c5a866;
+}
+.bar-table .row-col p img{
+	display: inline-block;
+	height: 35px;
+}
+.mui-slider-indicator.posit{
+	top: 25px;
+}
+.slider-item-view{
+	position: absolute;
+    top: 120px;
+    z-index: 2;
+    left:0;
+    right:0;
+    border-radius: 4px;
+}
+.slider-item-view .mui-slider{
+	width: 95%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+}
+.slider-item-view .row-item{
+	text-align: center;
+}
+.slider-item-view .row-item .mui-btn{
+	width: 91%;
+}
+.slider-item-view .mui-slider-indicator{
+	border-bottom: 1px solid #E7E7E7;
+}
+.slider-item-view .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-top:none;
+    border-bottom:none;
+}
+.slider-item-view .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #ef4c3b;
+}
+.row-item .foot-order{
+	padding: 15px 0;
+	text-align: right;
+}
+.row-item .foot-order a{
+	margin-right: 30px;
+	color: #8f8f94;
+	font-size: 13px;
+}
+.mui-slider-group .SetInfo{
+	text-align: left;
+}
+.SetInfo .mui-table-view-cell:after{
+	right: 15px;
+}
+.SetInfo .mui-table-view-cell{
+	padding: 15px 15px;
+}
+.row-item .see-button{
+	position: relative;
+	padding-top: 15px;
+}
+.row-item .see-button:before{
+	display: block;
+	content: "";
+	clear: both;
+	position: absolute;
+	top: 0;
+	height: 1px;
+	left: 15px;
+	right: 15px;
+	-webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.slider-item-view .mui-segmented-control .mui-control-item{
+	line-height: 45px;
+}
+
+.content-view .mui-navigate-right .view-right{
+	float: right;
+    padding-right: 25px;
+    color: #c8c7cc;
+    font-size: 15px;
+}
+.content-view .textareainfo{
+	position: absolute;
+	top: -1px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.content-view .textareainfo textarea{
+	border:none;
+}
+
+/*重置密码页面*/
+.alterpwd-table{
+	padding: 15px;
+	text-align: center;
+}
+.alterpwd-table .leftname{
+	padding-bottom: 15px;
+	font-size: 18px;
+	color: #333;
+	float: left;
+	display: inline-block;
+	line-height: 22px;
+	text-align: left;
+}
+.alterpwd-table .phone{
+	height: 50px;
+}
+.alterpwd-table .mui-btn{
+	width: 100%;
+	font-size: 17px;
+	background: #c5a866;
+	color: #fff;
+	border:none;
+	padding:10px 12px;
+}
+/*地址管理*/
+.bottom-fxied .add-site{
+	width: 100%;
+	background: #c5a866;
+	border:none;
+	border-radius: 0;
+	font-size: 18px;
+	color: #fff;
+	padding:10px 12px;
+}
+.stiecontent .sitelist{
+	position: relative;
+	background: #fff;
+	border-bottom: 1px solid #E7E7E7;
+	margin-bottom: 10px;
+}
+.sitelist .site-header{
+	padding: 10px;
+}
+.site-header .userinfo{
+	font-size: 18px;
+	color: #333;
+	padding-bottom: 8px;
+}
+.site-header .userinfo .name{
+	padding-right: 5px;
+}
+.site-header .siteinfo{
+	color:#c8c7cc;
+	font-size: 15px;
+}
+.sitelist .site-bar{
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	padding: 0 10px;
+	border-top: 1px solid #E7E7E7;
+}
+.sitelist .site-bar .mui-input-row{
+	float: left;
+}
+.sitelist .site-bar .mui-radio.mui-left input[type=radio]{
+	left: 0;
+	top: 6px;
+}
+.sitelist .site-bar .mui-radio.mui-left label{
+	padding-left: 35px;
+	font-size: 14px;
+    color: #ff404b;
+}
+.sitelist .site-bar .rightcrap{
+	text-align: right;
+	float: right;
+	padding-top: 5px;
+}
+.site-bar .rightcrap .mui-btn{
+	padding: 4px 12px;
+	font-size: 14px;
+	color: #333;
+}
+.sitelist .site-bar .mui-radio input[type=radio]:checked:before{
+	color: #c5a866;
+	content: '\e442';
+}
+/*修改地址*/
+.fillsite .fill_li{
+	border-bottom: 1px solid #E7E7E7;
+	background: #fff;
+	position: relative;
+}
+.fillsite .fill_li.arrow:before{
+	position: absolute;
+	top: 12px;
+	right: 5px;
+	content: '\e583';
+	clear: both;
+	font-family: Muiicons;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+.fillsite .fill_li .leftlabel{
+	display: block;
+	float: left;
+	width: 28%;
+	height: 49px;
+	line-height: 49px;
+	font-size: 15px;
+	color: #333;
+	text-align: right;
+}
+.fillsite .fill_li .righttext{
+	width: 72%;
+	margin-bottom: 0;
+	float: right;
+	height: 49px;
+	border: none;
+	font-size: 14px;
+	color: #333;
+}
+.fillsite .fill_li.arrow .righttext{
+	padding-right: 25px;
+}
+.fillsite .fill_li .textarea{
+	width: 72%;
+	border: 0;
+	display: block;
+	line-height: 18px;
+	margin-bottom: 0;
+	padding-top: 15px;
+    color: #333;
+    font-size: 14px;
+}
+/*登录页面*/
+.logincontent{
+	background: #fff;
+	padding: 10px 15px;
+}
+.logincontent .mui-input-row label{
+	width: 27%;
+	padding: 16px 15px;
+	font-size: 15px;
+}
+.logincontent .mui-input-row .leftwid{
+	width: 33%;
+	padding: 16px 10px;
+}
+.logincontent .mui-input-row label~input{
+	width: 73%;
+	height: 50px;
+	font-size: 14px;
+	color: #333;
+}
+.logincontent .mui-input-row.registerwid label~input{
+	width: 67%;
+}
+.logincontent .mui-input-row{
+	border-bottom: 1px solid #E7E7E7;
+}
+.logincontent .mui-input-row .mui-icon-eye{
+	top: 15px;
+	color: #c8c7cc;
+}
+.logincontent .mui-input-row .mui-icon-eye.mui-active{
+	color: #e9b734;
+}
+.logincontent .forget-pw-safe{
+	padding-top: 18px;
+	font-size: 12px;
+	color: #c8c7cc;
+	text-align: right;
+}
+.logincontent .login-btn{
+	padding-top: 35px;
+}
+.logincontent .forget-pw-safe .safe-link{
+	color: #c8c7cc;
+}
+.logincontent .login-btn .mui-btn{
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	padding: 12px;
+	border: none;
+	background: #e9b734;
+	color: #fff;
+}
+.logincontent .coagent{
+	padding-top: 20px;
+	font-size: 15px;
+}
+.logincontent .coagent .leftme{
+	color: #c8c7cc;
+}
+.logincontent .coagent .quickReg{
+	color: #c8c7cc;
+	text-align: right;
+	float: right;
+}
+.logincontent .coagent .quickReg em{
+	color: #ff404b;
+}
+.logincontent .mui-input-row .appcode,.logincontent .mui-input-row .phonecode{
+	position: absolute;
+	top: 8px;
+	right: 0;
+	padding: 0 3px;
+	height: 33px;
+	border: 1px solid #E7E7E7;
+	font-size: 12px;
+}
+
+
+/*我的资产*/
+.ssetmobilehd{
+	background: #fff;
+	padding:30px 0;
+}
+.ssetmobilehd .payview{
+	width: 200px;
+	height: 200px;
+	background: #f8f8f8;
+	margin:0 auto;
+	border-radius:100%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	color: #333;
+	padding-top: 70px;
+	position: relative;
+}
+.ssetmobilehd .payview:after{
+	display: block;
+	content: "";
+	border-radius: 100%;
+	border:4px solid #c5a866;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+}
+.ssetmobilehd .payview span{
+	display: block;
+	width: 56%;
+    margin: 0 auto;
+}
+.ssetmobilehd .batTag{
+	text-align: center;
+	font-size: 15px;
+	color: #333;
+	padding-top: 25px;
+}
+.ssetmobilehd .batTag .tag_pay{
+	position: relative;
+}
+.ssetmobilehd .batTag .pays{
+	padding-right: 15px;
+}
+.ssetmobilehd .batTag .pays:after{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #ff404b;
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top:-5px;
+	left: -15px;
+}
+.ssetmobilehd .batTag .pm{
+	padding-left: 15px;
+}
+.ssetmobilehd .batTag .pm:after{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #c5a866;
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top:-5px;
+	left: 0px;
+}
+.ssetmobilehd .payview .paym{
+	font-size: 18px;
+    line-height: 18px;
+    border-top: 1px solid #c5a866;
+    margin-top: 6px;
+    padding-top: 10px;
+}
+
+
+/*零钱包*/
+.ssetmobilehd .coinp-logo{
+	text-align: center;
+	padding-top: 60px;
+	background: url(../img/lj.jpg) no-repeat top center;
+	background-size: 60px 60px;
+	font-size: 12px;
+	color: #333;
+}
+.ssetmobilehd .coinp-paysun{
+	text-align: center;
+	font-size: 22px;
+	color: #c5a866;
+	line-height: 20px;
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+.coinp_statement{
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #c8c7cc;
+	font-size: 13px;
+}
+
+/*授权额度*/
+.ssetmobilehd.sq_coinpurse{
+	background: #4d5059;
+}
+.sq_coinpurse .sq_coinpu_sun{
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	line-height: 25px;
+	margin-top: -25px;
+}
+.sq_coinpurse .sq_coinpu_sun .mui-icon-arrowright{
+	vertical-align: top;
+}
+.ssetmobilehd.sq_coinpurse .coinp-paysun{
+	font-size: 16px;
+}
+
+

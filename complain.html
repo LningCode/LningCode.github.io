@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">投诉建议</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="content-view" style="position: relative;">
+                        <ul class="mui-table-view topmin-10">
+                            <li class="mui-table-view-cell" id="textareacell">
+                                <a class="mui-navigate-right">
+                                    <span class="view-text">建议与意见</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="#userset" class="mui-navigate-right">
+                                    <span class="view-text">投诉</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="textareainfo">
+                            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="您的意见和建议是我们进步的源动力，请尽情告诉我们把！"></textarea>
+                            <button class="mui-btn" style="width: 50%;padding:15px">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="userset" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <!-- 可选择菜单 -->
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a href="#" style="font-size: 13px;color: #c8c7cc;">拨打投诉电话</a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a>13925057575</a>
+      </li>
+    </ul>
+    <!-- 取消菜单 -->
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a href="#userset">取消</a>
+      </li>
+    </ul>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+    $("#textareacell").on("click",function(){
+        $(".textareainfo").show();
+    });
+    $(".textareainfo").on("click",".mui-btn",function(){
+        $(".textareainfo").hide();
+        $(".textareainfo").find("textarea").val("");
+    });
+</script>
+</html>

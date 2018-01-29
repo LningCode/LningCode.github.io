@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">现金借款</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="cash_list">
+                        <div class="topviewinner"><img src="upload/topviewinner.jpg" alt=""></div>
+                        <div class="cash_ecard_inner">
+                            <div class="cash_ecard_m">
+                                <div class="cash_ecard_hd">
+                                    <div class="cash_name"><span class="isonimg"><img src="upload/xjicon.jpg" alt=""></span>网商贷</div>
+                                    <div class="cash_maxsun">1000-50000 <span class="size">额度(元)</span></div>
+                                    <div class="cash_tag">
+                                        <span class="tag">平均两小时到账</span>
+                                        <span class="tag">期限3、6、9、12、24期</span>
+                                        <span class="tag">适合22周岁以上工薪人群</span>
+                                    </div>
+                                    <div class="cash_path">申请流程步骤</div>
+                                </div>
+                                <div class="cash_ecard_btn mui-row">
+                                    <div class="mui-col-xs-6"><a href="#sheet1" class="mui-btn btndest">查看详情</a></div>
+                                    <div class="mui-col-xs-6"><a href="#" class="mui-btn btnlink">立即申请</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cash_ecard_inner">
+                            <div class="cash_ecard_m">
+                                <div class="cash_ecard_hd">
+                                    <div class="cash_name"><span class="isonimg"><img src="upload/xjicon.jpg" alt=""></span>蚂蚁借呗</div>
+                                    <div class="cash_maxsun">1000-50000 <span class="size">额度(元)</span></div>
+                                    <div class="cash_tag">
+                                        <span class="tag">平均两小时到账</span>
+                                        <span class="tag">期限3、6、9、12、24期</span>
+                                        <span class="tag">适合22周岁以上工薪人群</span>
+                                    </div>
+                                    <div class="cash_path">申请流程步骤</div>
+                                </div>
+                                <div class="cash_ecard_btn mui-row">
+                                    <div class="mui-col-xs-6"><a href="#sheet1" class="mui-btn btndest">查看详情</a></div>
+                                    <div class="mui-col-xs-6"><a href="#" class="mui-btn btnlink">立即申请</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action">
+    <a href="#sheet1" style="display: block;width: 84%;margin:0 auto;padding-bottom: 15px;"><img style="display: block;width: 100%;border-radius: 5px;" src="upload/dksqsm.jpg" alt=""></a>
+    <div class="cashfootbtn"><a href="#" style="background: #c5a866;font-size: 15px;width: 100%;color: #fff;padding:10px 12px;border:none;border-radius: 0;" class="mui-btn btnlink">立即申请</a></div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+    mui('.mui-scroll-wrapper').scroll();
+    $(".btnlink").on("click",function(){
+        mui.toast('额度已经申请完！');
+    });
+</script>
+</html>

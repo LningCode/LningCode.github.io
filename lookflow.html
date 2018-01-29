@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title" id="title">查看物流</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="allorderlist">
+                        <div class="FlowTop clearfix">
+                            <div class="Flowhdimg">
+                                <img src="upload/bg.jpg" alt="">
+                                <span class="allsun">共1件</span>
+                            </div>
+                            <div class="FlowCent">
+                                <p>物流状态:<em>已签收</em></p>
+                                <p>配送方式:<em>圆通</em></p>
+                                <p>物流单号:<em>24235437596854</em></p>
+                            </div>
+                        </div>
+
+                        <div class="FlowBody">
+                            <ul class="FlowBodyUl">
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">快件正在派送中 <span>派件员电话：13925057575</span></p>
+                                        <p class="cent">2018-10-13 11：20</p>
+                                    </div>
+                                </li>
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">快件已近到达广州市天河区逐句街道点</p>
+                                        <p class="cent">2018-10-12 11：20</p>
+                                    </div>
+                                </li>
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">广州市员村点已近揽件</p>
+                                        <p class="cent">2018-10-10 11：20</p>
+                                    </div>
+                                </li>
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">广州市员村点已近揽件</p>
+                                        <p class="cent">2018-10-10 11：20</p>
+                                    </div>
+                                </li>
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">广州市员村点已近揽件</p>
+                                        <p class="cent">2018-10-10 11：20</p>
+                                    </div>
+                                </li>
+                                <li class="FlowLi">
+                                    <span class="FlowLeft"></span>
+                                    <div class="FlowRight">
+                                        <p class="cent">包裹正在等待揽件</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui('.mui-scroll-wrapper').scroll();
+</script>
+</html>

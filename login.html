@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">登录</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap" style="background:#fff;">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="logincontent">
+                        <div class="input-group">
+                            <div class="mui-input-row">
+                                <label>用户名</label>
+                            <input type="text" class="mui-input-clear" placeholder="请输入用户名">
+                            </div>
+                            <div class="mui-input-row">
+                                <label>密码</label>
+                                <input type="password" class="mui-input-password" placeholder="请输入密码">
+                            </div>
+                            <p class="forget-pw-safe"><span class="safe-link">注册即表示您已同意中一隐私协议</span></p>
+                        </div>
+                        <div class="login-btn">
+                            <a href="index.html" class="mui-btn">登录</a>
+                        </div>
+                        <div class="coagent">
+                            <a href="alterpwd.html" class="leftme">忘记密码</a>
+                            <a href="register.html" class="quickReg">没有账号？<em>去注册</em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

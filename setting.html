@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">设置</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="content-view">
+                        <ul class="mui-table-view topmin-10">
+                            <li class="mui-table-view-cell" id="userinfoset">
+                                <a class="mui-navigate-right">
+                                    <span class="view-text">账户设置</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="pwdand.html" class="mui-navigate-right">
+                                    <span class="view-text">密码管理</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a class="mui-navigate-right">
+                                    <span class="view-text">微信绑定</span>
+                                    <span class="view-right">已绑定</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="usersite.html" class="mui-navigate-right">
+                                    <span class="view-text">收货地址管理</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="complain.html" class="mui-navigate-right">
+                                    <span class="view-text">投诉建议</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mui-table-view topmin-10 alert-30">
+                            <li class="mui-table-view-cell">
+                                <a href="#userset" class="mui-navigate-right">
+                                    <span class="view-text">退出登录</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="userset" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <!-- 可选择菜单 -->
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a href="#" style="font-size: 13px;color: #c8c7cc;">确定退出登录吗</a>
+      </li>
+      <li class="mui-table-view-cell">
+        <a href="login.html">确定</a>
+      </li>
+    </ul>
+    <!-- 取消菜单 -->
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell">
+        <a href="#userset">取消</a>
+      </li>
+    </ul>
+</div>
+
+<!-- 个人资料 -->
+<div class="indexuserbackdrop">
+    <div class="top-fixed">
+        <header id="header" class="">
+            <a class="pull-left" id="hideuser"><em class="mui-icon mui-icon-back"></em>返回</a>
+            <h1 class="title">个人资料</h1>
+        </header>
+    </div>
+    <div class="user-wrap">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">头像</span>
+                    <em class="rightcent input"><input type="file"><img src="img/userlogo.jpg" alt=""></em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right" href="javascript:;">
+                    <span class="lobalname">昵称</span>
+                    <em class="rightcent">变化在高处</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <span class="lobalname">手机号码</span>
+                <em class="rightcent marhet">13925057575</em>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <span class="lobalname">身份证号码</span>
+                <em class="rightcent marhet">44686231321321654135</em>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">性别</span>
+                    <em class="rightcent">男</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">地区</span>
+                    <em class="rightcent">广东省广州市</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">邮箱</span>
+                    <em class="rightcent">1170096634@qq.com</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">QQ号码</span>
+                    <em class="rightcent">1170096634</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="input-row-bj"></div>
+    <div class="input-row">
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" id="input-clear" placeholder="请输入内容">
+        </div>
+        <button class="mui-btn left">取消</button>
+        <button class="mui-btn right">确定</button>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+    $("#userinfoset").on("click",function(){
+        $(".indexuserbackdrop").css("left","0");
+    });
+    $("#hideuser").on("click",function(){
+        $(".indexuserbackdrop").css("left","-100%");
+    });
+
+    mui('.mui-scroll.scrollw').on('tap','.mui-control-item',function(){
+        var index = $(this).index()+1;
+        window.location = 'fine.html?&fine_id='+index+'';
+    });
+
+    var htmltext = "";
+    $(".mui-table-view").on("click","#altertext",function(){
+        $(".input-row-bj,.indexuserbackdrop .input-row").fadeIn();
+        $("#input-clear").attr("placeholder","请输入"+$(this).find(".lobalname").text()+"");
+        htmltext=$(this).find(".rightcent");
+    });
+
+    $(".input-row").on("click",".mui-btn.left,.mui-btn.right",function(){
+        if($(this).is(".right")){
+            if($("#input-clear").val()!=""){
+                htmltext.text($("#input-clear").val());
+                $("#input-clear").val("");
+            }
+        }
+        $(".input-row-bj,.indexuserbackdrop .input-row").fadeOut();
+    });
+</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left mui-action-back" href="signin.html"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">全能币中心</h1>
+                <span class="pull-right">规则说明</span>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="card-mobile-m">
+                        <img class="img" src="img/mb.jpg" alt="">
+                        <div class="paynub"><del>M</del><span>0.00</span></div>
+                        <div class="signdiv">
+                            <ul class="signul clearfix">
+                                <li class="signlist active"><i></i><span>1天</span></li>
+                                <li class="signlist"><i></i><span>2天</span></li>
+                                <li class="signlist"><em class="iconmsgm"></em><i></i><span>3天</span></li>
+                                <li class="signlist"><i></i><span>4天</span></li>
+                                <li class="signlist"><i></i><span>5天</span></li>
+                                <li class="signlist"><i></i><span>6天</span></li>
+                                <li class="signlist"><em class="iconmsgh"></em><i></i><span>7天</span></li>
+                            </ul>
+                            <div class="signbtn"><input type="button" class="mui-btn" value="签到"></div>
+                        </div>
+                    </div>
+                    <div class="card-mobile-p">
+                        <p class="title">收支明细</p>
+                        <div class="mui-row">
+                            <div class="mui-col-xs-9">
+                                <span class="blockspan">
+                                    <em>+0.01</em>
+                                    <span>1月25日</span>
+                                </span>
+                                <span class="blockspan">
+                                    <em>+0.11</em>
+                                    <span>1月25日</span>
+                                </span>
+                                <span class="blockspan">
+                                    <em>+0.89</em>
+                                    <span>1月25日</span>
+                                </span>
+                                <span class="blockspan">
+                                    <em>+0.23</em>
+                                    <span>1月25日</span>
+                                </span>
+                            </div>
+                            <a href="moremlink.html" class="mui-col-xs-3"><i class="mui-icon mui-icon-plus"></i><em>查看更多</em></a>
+                        </div>
+                    </div>
+                    <div class="card-mobile-txt">
+                        <h2 class="title">什么是全能币？</h2>
+                        <div class="col-card">
+                            <p>1.全能币是平台专用的现金积分。</p>
+                            <p>1.全能币可以兑换人民币，按照1:1的比例。</p>
+                        </div>
+                        <h2 class="title">怎么获取全能币？</h2>
+                        <div class="col-card">
+                            <p>1.在平台APP内购物或者购买其他产品付款成功后既可以获取自由币。</p>
+                            <p>1.在APP内签到获取。</p>
+                        </div>
+                        <h2 class="title">怎么使用全能币？</h2>
+                        <div class="col-card">
+                            <p>全能币使用仅限在平台内购物消费使用。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="mrootbackdrop">
+    <div class="top-fixed">
+        <header>
+            <span id="pullleft" class="pull-left" href="signin.html"><em class="mui-icon mui-icon-back"></em>返回</span>
+            <h1 class="title">规则说明</h1>
+        </header>
+    </div>
+    <div class="backdrop-view">
+        <div class="card-mobile-txt">
+            <h2 class="title">什么是全能币？</h2>
+            <div class="col-card">
+                <p>1.全能币是平台专用的现金积分。</p>
+                <p>2.全能币可以兑换人民币，按照1:1的比例。</p>
+                <p>3.全能币解释权归本平台所有。</p>
+            </div>
+            <h2 class="title">怎么获取全能币？</h2>
+            <div class="col-card">
+                <p>1.在平台APP内购物或者购买其他产品付款成功后既可以获取自由币。</p>
+                <p>1.在APP内签到获取。</p>
+            </div>
+            <h2 class="title">怎么使用全能币？</h2>
+            <div class="col-card">
+                <p>全能币使用仅限在平台内购物消费使用。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+    $(".pull-right").on("click",function(){
+        $(".mrootbackdrop").css("right","0");
+    });
+    $("#pullleft").on("click",function(){
+        $(".mrootbackdrop").css("right","-100%");
+    });
+</script>
+</html>

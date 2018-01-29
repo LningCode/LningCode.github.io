@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title" id="title">订单详情</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="allorderlist">
+                        <p class="dealstate"><span class="mui-icon mui-icon-checkmarkempty"></span>已完成</p>
+                        <div class="order_progress">
+                            <a class="arrowflow" href="lookflow.html">
+                                <span class="mui-icon mui-icon-map"></span>
+                                <span class="textif">客户签收:本人签收</span>
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                            <div class="order_detail">
+                                <label class="mui-icon mui-icon-map"></label>
+                                <div class="detmap">
+                                    <p>收货人:<span>林生</span><em>13925057575</em></p>
+                                    <p>收货地址:<span>广东省广州市白云区运城西林街万达广场207房</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cmdtylist">
+                            <div class="shopitem delleft mui-row">
+                                <div class="mui-col-xs-9">
+                                    <a href="#">
+                                        <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                        <div class="item-content">
+                                            <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="sku">网红款撩妹新技能</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mui-col-xs-3 goods_line">
+                                    <p class="price">￥168.00</p>
+                                    <p class="delprice"><del>￥198.00</del></p>
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="section-shop">
+                                <div class="shopitem delleft mui-row">
+                                    <div class="mui-col-xs-9">
+                                        <a href="#">
+                                            <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                            <div class="item-content">
+                                                <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                <p class="sku">网红款撩妹新技能</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mui-col-xs-3 goods_line">
+                                        <p class="price">￥168.00</p>
+                                        <p class="delprice"><del>￥198.00</del></p>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                                <div class="order_inner">
+                                    <p>商品总价<span class="right">￥101.22</span></p>
+                                    <p>商品总价<span class="right">￥101.22</span></p>
+                                    <p>商品总价<span class="right">￥101.22</span></p>
+                                    <p>商品总价<span class="right" style="color: #f0445c;">￥101.22</span></p>
+                                    <div class="order_money">
+                                        <span class="iconb"><i class="mui-icon mui-icon-flag"></i>返自由币<em style="color: #f0445c;">0.05个</em></span>
+                                    </div>
+                                </div>
+                                <div class="m_action btn-refer clearfix">
+                                    <button class="mui-btn">订单咨询</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_total">
+                            <p>订单号:<span>82467348275</span></p>
+                            <p>支付流水:<span>132121242334543</span></p>
+                            <p>下单时间:<span>2017-10-10 11:12</span></p>
+                            <p>支付时间:<span>2017-10-10 15:12</span></p>
+                            <p>交易对象:<span>臻选好物</span></p>
+                            <p>付款方式:<span>黑卡签单</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <div class="mui-row">
+                <span class="mui-col-xs-6"><span class="mui-btn mui-btn-warning delorderbtn">删除订单</span></span>
+                <a href="lookflow.html" class="mui-col-xs-6"><span class="mui-btn lookflowbtn">查看物流</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui('.mui-scroll-wrapper').scroll();
+</script>
+</html>

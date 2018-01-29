@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">我的卡券</h1>
+                <a href="#expired_ecard" class="pull-right mui-icon mui-icon-help"></a>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div id="slider" class="mui-slider mui-fullscreen">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll" style="width: 100%;">
+                        <a style="width: 50%;" class="mui-control-item mui-active" data-index="0">未使用</a>
+                        <a style="width: 50%;" class="mui-control-item" data-index="1">已失效</a>
+                    </div>
+                </div>
+                <div class="mui-slider-group">
+                    <div class="mui-slider-item mui-control-content mui-active">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <div class="expired_ecard_card">当前没有可以的卡卷</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <div class="unusable_list">
+                                    <div class="expired_ecard_card">当前没有可以的卡卷</div>
+                                    <div class="ecard_item">
+                                        <div class="expired_ecard">
+                                            <div class="expired_ecard_upper">
+                                                <div class="expired_logo"><span class="mui-icon mui-icon-starhalf"></span></div>
+                                                <div class="expired_ecard_msg">
+                                                    <p class="expired_msg_ecard">平台优惠卷</p>
+                                                    <p class="expired_msg_num">面值：¥200.00</p>
+                                                    <p class="expired_msg_expire">2019.12.29到期</p>
+                                                </div>
+                                            </div>
+                                            <div class="expired_ecard_lower">
+                                                <div class="expired_ecard_balance">
+                                                    <span class="expired_yue">金额:</span>
+                                                    <span class="expired_sym">￥</span>
+                                                    <span class="expired_num">0.00</span>
+                                                </div>
+                                                <p class="expired_ecard_describe">仅可购买平台自营商品（部分特殊商品除外），特殊商品以平台卡章程规定内容为准。</p>
+                                            </div>
+                                        </div>
+                                        <div class="expired_ecard">
+                                            <div class="expired_ecard_upper">
+                                                <div class="expired_logo"><span class="mui-icon mui-icon-starhalf"></span></div>
+                                                <div class="expired_ecard_msg">
+                                                    <p class="expired_msg_ecard">平台优惠卷</p>
+                                                    <p class="expired_msg_num">面值：¥200.00</p>
+                                                    <p class="expired_msg_expire">2019.12.29到期</p>
+                                                </div>
+                                            </div>
+                                            <div class="expired_ecard_lower">
+                                                <div class="expired_ecard_balance">
+                                                    <span class="expired_yue">金额:</span>
+                                                    <span class="expired_sym">￥</span>
+                                                    <span class="expired_num">0.00</span>
+                                                </div>
+                                                <p class="expired_ecard_describe">仅可购买平台自营商品（部分特殊商品除外），特殊商品以平台卡章程规定内容为准。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="expired_ecard" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <div class="top-fixed">
+        <header>
+            <h1 class="title">我的卡券</h1>
+            <a href="#expired_ecard" class="pull-right mui-icon mui-icon-close"></a>
+        </header>
+    </div>
+    <div class="scroll-wrap rule_scroll">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <h2 class="rule_tite">卡圈基本规则</h2>
+                <div class="rule_wrap">
+                    <div class="rule_block">
+                        <p class="hdblocktit">什么是卡卷？</p>
+                        <div class="bdcent">
+                            卡卷是平台提供的福利券，用户可在本平台使用卡卷享受消费优惠，抵消商品金额等权益。
+                        </div>
+                    </div>
+                    <div class="rule_block">
+                        <p class="hdblocktit">如何获得卡卷？</p>
+                        <div class="bdcent">
+                            
+                        </div>
+                    </div>
+                    <div class="rule_block">
+                        <p class="hdblocktit">如何使用卡卷？</p>
+                        <div class="bdcent">
+                            1.卡卷的使用规则已卡卷卷面说明为准，使用规则包含但不仅限于使用金额门槛，优惠金额，适用业务范围
+                            ，有效期等。
+                            2.单笔订单只能使用一张优惠卷，不支持叠加使用，卡卷金额大于订单金额的时候，差额不予退回，卡卷不兑现不找零。
+                            3.运费，担保费，改签费不可以使用卡卷。
+                        </div>
+                    </div>
+                    <div class="rule_block">
+                        <p class="hdblocktit">什么时候卡卷失效？</p>
+                        <div class="bdcent">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui.ready(function() {
+        mui('.mui-scroll-wrapper').scroll({
+            bounce: true,
+            indicators: true,
+            deceleration:mui.os.ios?0.003:0.0009
+        });
+        mui('.mui-scroll').on('tap','.mui-control-item:not(.mui-active)',function(){
+            mui('#slider').slider().gotoItem(this.getAttribute('data-index'));
+        });
+    });
+    mui('.mui-slider-group').on('tap','a',function(){document.location.href=this.href;});
+    $(".mui-popover .rule_scroll").height($("body").height()-45);
+</script>
+</html>

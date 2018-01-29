@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">验证手机号</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap" style="background: #fff;">
+            <div class="alterpwd-table">
+                <p class="leftname">已发送验证码到您绑定的手机号为：<span>13925057575</span></p>
+            </div>
+            <div class="mui-row alterpwd-table">
+                <div class="mui-col-xs-8"><input class="phone" type="text" placeholder="请输入验证码"></div>
+                <div class="mui-col-xs-4"><input class="phone code" type="button" value="获取验证码"></div>
+            </div>
+            <div class="alterpwd-table"><a href="newspwd.html" class="mui-btn">下一步</a></div>
+        </div> 
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

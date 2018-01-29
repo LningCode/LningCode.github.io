@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <!-- <div class="top-fixed">
+            <header id="header" class="">
+                <h1 class="title">出行</h1>
+            </header>
+        </div> -->
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="mui-slider" id="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/timg2.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="img/timg1.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="img/timg2.jpg" /></a></div>
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/timg1.jpg" /></a></div>
+                        </div>
+                        <div class="mui-slider-indicator posit">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="slider-item-view">
+                        <div class="mui-slider slide-group">
+                            <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                                <a class="mui-control-item mui-active" href="#item1mobile">酒店</a>
+                                <a class="mui-control-item" href="#item2mobile">飞机票</a>
+                                <a class="mui-control-item" href="#item3mobile">火车票</a>
+                                <a class="mui-control-item" href="#item4mobile">保险</a>
+                            </div>
+                            <div class="mui-slider-group">
+                                <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                                    <div class="row-item">
+                                        <div class="SetInfo">
+                                            <ul class="mui-table-view">
+                                                <li class="mui-table-view-cell">
+                                                    <span>广州</span>
+                                                    <em>我的位置</em>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        <p><span>入住</span><span>离店</span></p>
+                                                        <p>1月8日 今天 - 1月9日 明天</p>
+                                                        <em class="mui-badge">共1晚</em>
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right"><p>位置/品牌/酒店名称</p></a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right"><p>星级/价格</p></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="see-button"><button type="button" class="mui-btn mui-btn-warning">开始查询</button></div>
+                                        <p class="foot-order"><a href="#">订单</a></p>
+                                    </div>
+                                </div>
+                                <div id="item2mobile" class="mui-slider-item mui-control-content">
+                                    <div class="row-item">
+                                        <div class="SetInfo">
+                                            <ul class="mui-table-view">
+                                                <li class="mui-table-view-cell">
+                                                    <span>广州</span>
+                                                    <em>我的位置</em>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        <p><span style="margin:0 25px;">入住</span><span style="margin: 0 25px;">离店</span></p>
+                                                        <p>1月8日 今天 -- 1月9日 明天</p>
+                                                        <em class="mui-badge">共1晚</em>
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right"><p>位置/品牌/酒店名称</p></a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right"><p>星级/价格</p></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="see-button"><button type="button" class="mui-btn mui-btn-warning">开始查询</button></div>
+                                        <p class="foot-order"><a href="#">订单</a></p>
+                                    </div>
+                                </div>
+                                <div id="item3mobile" class="mui-slider-item mui-control-content">
+                                    <div class="row-item">
+                                        <div class="">
+                                            <ul class="mui-table-view">
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 1
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 2
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="see-button"><button type="button" class="mui-btn mui-btn-warning">开始查询</button></div>
+                                        <p class="foot-order"><a href="#">订单</a></p>
+                                    </div>
+                                </div>
+                                <div id="item4mobile" class="mui-slider-item mui-control-content">
+                                    <div class="row-item">
+                                        <div class="">
+                                            <ul class="mui-table-view">
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 1
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 2
+                                                    </a>
+                                                </li>
+                                                <li class="mui-table-view-cell">
+                                                    <a class="mui-navigate-right">
+                                                        Item 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="see-button"><button type="button" class="mui-btn mui-btn-warning">开始查询</button></div>
+                                        <p class="foot-order"><a href="#">订单</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="mui-card">
+                            <div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(upload/457404990591289670_03.jpg)"></div>
+                            <div class="mui-card-content">
+                                <div class="mui-card-content-inner">
+                                    <p style="color: #333;">给重要的人送贵宾厅年卡</p>
+                                    <p>全年尊享全球150家机场贵宾服务</p>
+                                </div>
+                            </div>
+                            <div class="mui-card-footer">
+                                <a class="mui-card-link">可定制</a>
+                                <a class="mui-card-link">详情</a>
+                            </div>
+                        </div>
+                        <div class="mui-card">
+                            <div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(upload/457404990591289670_03-02.jpg)"></div>
+                            <div class="mui-card-content">
+                                <div class="mui-card-content-inner">
+                                    <p style="color: #333;">都是睡五星级酒店的，怎样睡出优越感？</p>
+                                    <p>独家APP优先入住，40多家五星级酒店入住3折起</p>
+                                </div>
+                            </div>
+                            <div class="mui-card-footer">
+                                <a class="mui-card-link">已售罄</a>
+                                <a class="mui-card-link">详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="FooterMsg"><span>每一步，新世界</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <footer>
+                <a href="index.html" class="home">
+                  <span class="icon icon_home"></span>
+                  <p>首页</p>
+                </a>
+                <a href="fine.html" class="fine">
+                  <span class="icon icon_fine"></span>
+                  <p>好物</p>
+                </a>
+                <a href="trip.html" class="trip active">
+                  <span class="icon icon_trip"></span>
+                  <p>出行</p>
+                </a>
+                <a href="more.html" class="more">
+                  <span class="icon icon_more"></span>
+                  <p>发现</p>
+                </a>
+                <a href="user.html" class="my">
+                  <span class="icon icon_my"></span>
+                  <p>我</p>
+                </a>
+            </footer>
+        </div>  
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    mui('#mui-slider').slider({interval:5000});
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

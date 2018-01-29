@@ -1,0 +1,159 @@
+.bottom-fxied .fixBar{
+	text-align: center;
+}
+.fixBar .mui-icon-star{
+	color: #c2c2c2;
+	margin-top: 5px;
+}
+.fixBar .star-text{
+	display: block;
+	font-size: 14px;
+	color: #c2c2c2;
+	margin-top: -3px;
+}
+.fixBar .col-btn-5{
+	width: 50%;
+	float: left;
+	background: #ff404b;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 0;
+	padding: 15px 12px;
+}
+.fixBar .col-btn-5.addchat{
+	color: #fff;
+	background: #e9b734;
+}
+.details-item{
+	text-align: center;
+}
+.details-item .details-img{
+	background: #fff;
+}
+.details-item .details-img img{
+	display: block;
+	width: 100%;
+	background: #fff;
+}
+.details-item .details-padd{
+	background: #fff;
+	padding: 15px;
+}
+.details-item .na-title{
+	font-size: 18px;
+	color: #333;
+	font-weight: 600;
+	line-height: 20px;
+	padding-bottom: 15px;
+}
+.details-item .sn-title{
+	font-size: 15px;
+	line-height: 22px;
+}
+
+/*底部弹框*/
+.mui-popover.mui-popover-action{
+	height: 70%;
+	background: #fff;
+}
+.spec-menu-content{
+	padding: 10px 15px;
+	position: relative;
+}
+.spec-menu-content .spec-menu-top{
+	position: relative;
+	height: 108px;
+	margin-bottom: 15px;
+}
+.spec-menu-top .spec-first-pic{
+	width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+}
+.spec-menu-top .spec-first-pic img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.spec-menu-top .spec-price{
+	padding-left: 100px;
+	overflow: hidden;
+	max-height: 108px;
+}
+.spec-price .price-wrap{
+	font-size: 18px;
+	line-height: 18px;
+    padding: 5px 0 10px;
+}
+.spec-price .price-wrap span{
+	color: #ff404b;
+}
+.spec-price .price-wrap del{
+	color: #c8c7cc;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.spec-menu-top .spec-price .price-f{
+	border: 1px solid #f0ad4e;
+	color: #f0ad4e;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 0 8px;
+	height: 22px;
+	display: inline-block;
+}
+.spec-menu-top .spec-price .name-wrap{
+	font-size: 17px;
+	color: #333;
+	padding-top: 10px;
+}
+.spec-menu-content .spec-menu-close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #e9b734;
+	font-size: 28px;
+}
+.spec-menu .spec-menu-btn{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.spec-menu-btn .mui-btn{
+	width: 100%;
+	border-radius: 0;
+	font-size: 16px;
+	padding: 12px;
+}
+.spec-menu-content .spec-menu-middle{
+	max-height: 560px;
+	overflow: auto;
+}
+.spec-menu-middle .part-note-label{
+	font-size: 18px;
+	color: #333;
+	height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.spec-menu-middle .part-note-cent p{
+	font-size: 16px;
+	color: #c8c7cc;
+}
+.spec-menu-middle .nature-container{
+	padding-top: 20px;
+}
+.spec-menu-middle .nature-container .mui-numbox{
+	float: right;
+	width: 150px;
+	height: 40px;
+	padding: 0 45px;
+}
+.nature-container .mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{
+	width: 45px;
+	font-size: 22px;
+}

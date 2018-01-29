@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">信用卡申请</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div id="slider" class="mui-slider mui-fullscreen">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll" style="width: 100%">
+                        <a style="width: 50%;" class="mui-control-item mui-active" data-index="0">交通</a>
+                        <a style="width: 50%;" class="mui-control-item" data-index="1">招商</a>
+                    </div>
+                </div>
+                <div class="mui-slider-group">
+                    <div class="mui-slider-item mui-control-content mui-active">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <a href="credit_details.html"><img style="display: block;width: 100%;" src="upload/xyklist.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <a href="credit_details.html"><img style="display: block;width: 100%;" src="upload/xyklist1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui.ready(function() {
+        mui('.mui-scroll-wrapper').scroll({
+            bounce: true,
+            indicators: true,
+            deceleration:mui.os.ios?0.003:0.0009
+        });
+        mui('.mui-scroll').on('tap','.mui-control-item:not(.mui-active)',function(){
+            mui('#slider').slider().gotoItem(this.getAttribute('data-index'));
+        });
+    });
+    mui('.mui-slider-group').on('tap','a',function(){document.location.href=this.href;});
+</script>
+</html>

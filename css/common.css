@@ -1,0 +1,377 @@
+body,html{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #f6f6f6;
+}
+p{
+	line-height: 16px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+em,i{
+	font-style:normal;
+}
+ul,ul li{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+*{touch-action: none;-webkit-user-select: auto;}
+.clearfix:after{
+    display: block;
+    content: "";
+    clear:both;
+}
+/*.mui-scroll-wrapper:after{
+    content: "亲你调皮了哦！(￣▽￣)";
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #c2c2c2;
+}*/
+.mui-scroll{
+    background: #f6f6f6;
+}
+.rownummsglog{
+    padding-top: 100px;
+    text-align: center;
+    background: url(../img/timg_03.png) no-repeat top center;
+    background-size:90px 90px;
+    margin-top: 100px;
+    color: #c8c7cc;
+}
+.loadfootmag{
+    text-align: center;
+    position: relative;
+    padding: 15px 0;
+    color: #c2c2c2;
+    margin-bottom: 5px;
+}
+.loadfootmag:after{
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #c2c2c2;
+    width: 22%;
+    left: 50%;
+    margin-left: 45px;
+}
+.loadfootmag:before{
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: #c2c2c2;
+    width: 22%;
+    right: 50%;
+    margin-right: 45px;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	font-weight: 600;
+	font-size: 18px;
+}
+.webview{
+	background: #fff;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.scrollview{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.scrollview .top-fixed{
+	left: 0px;
+    top: 0px;
+    width: 100%;
+    display: block;
+}
+.scrollview .scroll-wrap{
+	width: 100%;
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: #f6f6f6;
+}
+.scrollview .bottom-fxied{
+	left: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: block;
+}
+.bottom-fxied .home.active p, .bottom-fxied .fine.active p, .bottom-fxied .trip.active p, .bottom-fxied .more.active p,.bottom-fxied .my.active p{
+	color:#333;
+}
+.top-fixed header{
+	width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #E7E7E7;
+}
+.top-fixed header .title{
+	font-size: 17px;
+	font-weight: 500;
+	text-align: center;
+	height: 44px;
+	line-height: 44px;
+	margin: 0;
+}
+.bottom-fxied footer{
+	border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #F8F8F8;
+    padding-top: 4px;
+    width: 100%;
+    height: 48px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -moz-box-align: justify;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #FFF;
+}
+.bottom-fxied footer a{
+	color: #5D656B;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    font-size: 10px;
+}
+.bottom-fxied footer .icon{
+	display: block;
+    width: 100%;
+    height: 22px;
+    margin-bottom: 2px;
+}
+.bottom-fxied footer .icon img{
+    display: block;
+    margin: 0 auto;
+    width: 23px;
+}
+.bottom-fxied footer .icon_home{
+	background: url(../img/home.jpg) no-repeat center center;
+}
+.bottom-fxied footer .active .icon_home{
+	background: url(../img/home_s.jpg) no-repeat center center;
+}
+.bottom-fxied footer .icon_fine{
+	background: url(../img/fine.jpg) no-repeat center center;
+}
+.bottom-fxied footer .active .icon_fine{
+	background: url(../img/fine_s.jpg) no-repeat center center;
+}
+.bottom-fxied footer .icon_trip{
+	background: url(../img/trip.jpg) no-repeat center center;
+}
+.bottom-fxied footer .active .icon_trip{
+	background: url(../img/trip_s.jpg) no-repeat center center;
+}
+.bottom-fxied footer .icon_more{
+	background: url(../img/more.jpg) no-repeat center center;
+}
+.bottom-fxied footer .active .icon_more{
+	background: url(../img/more_s.jpg) no-repeat center center;
+}
+.bottom-fxied footer .icon_my{
+	background: url(../img/my.jpg) no-repeat center center;
+}
+.bottom-fxied footer .active .icon_my{
+	background: url(../img/my_s.jpg) no-repeat center center;
+}
+.bottom-fxied footer .icon_trip,
+.bottom-fxied footer .icon_home,
+.bottom-fxied footer .icon_fine,
+.bottom-fxied footer .icon_more,
+.bottom-fxied footer .icon_my,
+.bottom-fxied footer .active .icon_my,
+.bottom-fxied footer .active .icon_more,
+.bottom-fxied footer .active .icon_trip,
+.bottom-fxied footer .active .icon_fine,
+.bottom-fxied footer .active .icon_home{
+ 	background-size: 24px 24px;
+}
+.content-view{
+	background: #f6f6f6;
+}
+.FooterMsg{
+	text-align: center;
+	padding: 10px 0;
+	color: #f0ad4e;
+}
+.FooterMsg span{
+	position: relative;
+	display: inline-block;
+}
+.FooterMsg span:after{
+	position: absolute;
+	content: "";
+	clear: both;
+	display: block;
+	width: 40px;
+    height: 1px;
+    background: #f0ad4e;
+    top: 7px;
+    right: -50px;
+}
+.FooterMsg span:before{
+	position: absolute;
+	content: "";
+	clear: both;
+	display: block;
+	width: 40px;
+    height: 1px;
+    background: #f0ad4e;
+    top: 7px;
+    left: -50px;
+}
+
+.pull-left{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: #333;
+    font-size: 13px;
+    line-height: 45px;
+}
+.pull-left .mui-icon-back{
+    vertical-align: sub;
+}
+.pull-right{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 13px;
+    line-height: 45px;
+}
+
+/*个人资料*/
+.indexuserbackdrop{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: #fff;
+    z-index: 999999;
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+}
+.indexuserbackdrop .user-wrap .mui-table-view-chevron .mui-table-view-cell{
+    padding-right: 45px;
+}
+.indexuserbackdrop .user-wrap .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn){
+    margin-right: -50px;
+}
+.indexuserbackdrop .user-wrap .lobalname{
+    line-height: 35px;
+}
+.indexuserbackdrop .user-wrap .rightcent input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    opacity: 0;
+}
+.indexuserbackdrop .user-wrap .rightcent{
+    float: right;
+    position: relative;
+    color: #bbb;
+    font-size: 15px;
+    line-height: 35px;
+}
+.indexuserbackdrop .user-wrap .rightcent.input{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.indexuserbackdrop .user-wrap .rightcent img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.indexuserbackdrop .user-wrap .marhet{
+    margin-right: -30px;
+}
+.indexuserbackdrop .input-row{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 2;
+    text-align: center;
+    padding: 20px 10px;
+}
+.indexuserbackdrop .input-row-bj{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.6;
+    display: none;
+}
+.indexuserbackdrop .mui-input-row input{
+    height: 60px;
+    padding-right: 35px;
+}
+.indexuserbackdrop .mui-input-row .mui-icon-clear{
+    top: 22px;
+}
+.indexuserbackdrop .input-row .mui-btn{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.indexuserbackdrop .input-row .mui-btn.left{
+    margin-right: 15px;
+}
+.indexuserbackdrop .input-row .mui-btn.right{
+    margin-left: 15px;
+}

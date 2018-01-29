@@ -1,12 +1,357 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>开启项目鲁码</title>
-	<link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-	<h1>看到情况了</h1>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left" id="showuser"><img src="img/userlogo.jpg" alt=""></a>
+                <h1 class="title">SPECIAL THINGS</h1>
+                <a class="pull-right" href="signin.html">签到</a>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="mui-slider" id="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img style="height: 180px;" src="upload/index3.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img style="height: 180px;" src="upload/index1.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img style="height: 180px;" src="upload/index2.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img style="height: 180px;" src="upload/index3.jpg" /></a></div>
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img style="height: 180px;" src="upload/index1.jpg" /></a></div>
+                        </div>
+                        <div class="mui-slider-indicator posit">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="indexmobile indexmobile-marg">
+                        <div class="hdtitle">
+                            <h3>最全的生活配置</h3>
+                        </div>
+                        <div class="table-cord">
+                            <ul class="mui-row rowlive">
+                                <li class="mui-col-xs-3">
+                                    <a href="cashloan.html">
+                                        <span class="iconimg"><img src="img/lc.jpg" alt=""></span>
+                                        <span class="text">现金借款</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="trip.html">
+                                        <span class="iconimg"><img src="img/trip.jpg" alt=""></span>
+                                        <span class="text">机票火车票</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="trip.html">
+                                        <span class="iconimg"><img src="img/order.jpg" alt=""></span>
+                                        <span class="text">酒店预订</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="manage.html">
+                                        <span class="iconimg"><img src="img/lj.jpg" alt=""></span>
+                                        <span class="text">专属理财</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="#">
+                                        <span class="iconimg"><img src="img/dk.jpg" alt=""></span>
+                                        <span class="text">电影票</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="#">
+                                        <span class="iconimg"><img src="img/tq.jpg" alt=""></span>
+                                        <span class="text">话费充值</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="insurance.html">
+                                        <span class="iconimg"><img src="img/bx.jpg" alt=""></span>
+                                        <span class="text">报险服务</span>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-3">
+                                    <a href="#">
+                                        <span class="iconimg"><img src="img/trip.jpg" alt=""></span>
+                                        <span class="text">违章查询</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lookmore"><a href="livelist.html" class="lookbtn">查看全部<em class="mui-icon mui-icon-arrowright"></em></a></div>
+                    </div>
+                    <div class="indexmobile indexmobile-marg">
+                        <div class="hdtitle">
+                            <h3>最受欢迎的人气好物</h3>
+                        </div>
+                        <div class="table-cord">
+                            <ul class="mui-row tuijlist">
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="colbg">
+                                        <span class="iconright"><img src="upload/tj1.jpg" alt=""></span>
+                                        <span class="text">精选限定</span>
+                                        <em class="msg">品质之选</em>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="colbg">
+                                        <span class="iconright"><img src="upload/tj2.jpg" alt=""></span>
+                                        <span class="text">情人节定制</span>
+                                        <em class="msg">限量定制</em>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="colbg">
+                                        <span class="iconright"><img src="upload/tj3.jpg" alt=""></span>
+                                        <span class="text">男人系列</span>
+                                        <em class="msg">独家行囊</em>
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="colbg">
+                                        <span class="iconright"><img src="upload/tj4.jpg" alt=""></span>
+                                        <span class="text">精品试用</span>
+                                        <em class="msg">健身装备</em>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                                <div class="mui-scroll scrollw">
+                                    <a class="mui-control-item"><img src="upload/list1.jpg" alt=""><span class="text">生活</span></a>
+                                    <a class="mui-control-item"><img src="upload/list2.jpg" alt=""><span class="text">穿搭</span></a>
+                                    <a class="mui-control-item"><img src="upload/list3.jpg" alt=""><span class="text">文创</span></a>
+                                    <a class="mui-control-item"><img src="upload/list4.jpg" alt=""><span class="text">玩物</span></a>
+                                    <a class="mui-control-item"><img src="upload/list4.jpg" alt=""><span class="text">茶叶</span></a>
+                                    <a class="mui-control-item"><img src="upload/list5.jpg" alt=""><span class="text">个人护理</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lookmore"><a href="fine.html" class="lookbtn">查看全部<em class="mui-icon mui-icon-arrowright"></em></a></div>
+                    </div>
+                    <div class="indexmobile indexmobile-marg">
+                        <div class="hdtitle">
+                            <h3>全球出行</h3>
+                        </div>
+                        <div class="table-cord pad15">
+                            <ul class="mui-row rowtrip">
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="triplink">
+                                        <span class="textign">非凡世界旅行
+                                            <em class="emmsg">到此一游<i class="mui-icon mui-icon-arrowright"></i></em>
+                                        </span>
+                                        <img src="upload/ly1.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="triplink">
+                                        <span class="textign">新年盛典
+                                            <em class="emmsg">盛汇好品</em>
+                                        </span>
+                                        <img src="upload/ly2.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="triplink">
+                                        <span class="textign">精选酒店
+                                            <em class="emmsg">价格优惠，全网最低</em>
+                                        </span>
+                                        <img src="upload/ly3.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li class="mui-col-xs-6">
+                                    <a href="#" class="triplink">
+                                        <span class="textign">景点名筑
+                                            <em class="emmsg">到此一游<i class="mui-icon mui-icon-arrowright"></i></em>
+                                        </span>
+                                        <img src="upload/ly4.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="indexmobile">
+                        <div class="hdtitle">
+                            <h3>最新动态抢先看</h3>
+                        </div>
+                        <div class="table-cord">
+                            <div class="hdnews"><a href="#"><img src="upload/varid.jpg" alt=""><span>Valentine's Day | 用最时尚的态度去爱</span></a></div>
+                            <ul class="mui-table-view">
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="statedetails.html" class="">
+                                        <img class="mui-media-object mui-pull-right" src="upload/xn.jpg">
+                                        <div class="mui-media-body">
+                                            能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？
+                                            <p class="mui-ellipsis">2018-02-10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="statedetails.html">
+                                        <img class="mui-media-object mui-pull-right" src="upload/bg.jpg">
+                                        <div class="mui-media-body">
+                                            想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.
+                                            <p class="mui-ellipsis">2018-02-10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="statedetails.html">
+                                        <img class="mui-media-object mui-pull-right" src="upload/qc.jpg">
+                                        <div class="mui-media-body">
+                                            静静的看这个世界，最后终于疯了
+                                            <p class="mui-ellipsis">2018-02-10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lookmore"><a href="allstate.html" class="lookbtn">查看全部<em class="mui-icon mui-icon-arrowright"></em></a></div>
+                    </div>
+                    <p class="loadfootmag">习惯被守候</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <footer>
+                <a href="index.html" class="home active">
+                  <span class="icon icon_home"></span>
+                  <p>首页</p>
+                </a>
+                <a href="fine.html" class="fine">
+                  <span class="icon icon_fine"></span>
+                  <p>好物</p>
+                </a>
+                <a href="trip.html" class="trip">
+                  <span class="icon icon_trip"></span>
+                  <p>出行</p>
+                </a>
+                <a href="more.html" class="more">
+                  <span class="icon icon_more"></span>
+                  <p>发现</p>
+                </a>
+                <a href="user.html" class="my">
+                  <span class="icon icon_my"></span>
+                  <p>我</p>
+                </a>
+            </footer>
+        </div>  
+    </div>
+</div>
+<div class="indexuserbackdrop">
+    <div class="top-fixed">
+        <header id="header" class="">
+            <a class="pull-left" id="hideuser"><em class="mui-icon mui-icon-back"></em>返回</a>
+            <h1 class="title">个人资料</h1>
+        </header>
+    </div>
+    <div class="user-wrap">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">头像</span>
+                    <em class="rightcent input"><input type="file"><img src="img/userlogo.jpg" alt=""></em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right" href="javascript:;">
+                    <span class="lobalname">昵称</span>
+                    <em class="rightcent">变化在高处</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <span class="lobalname">手机号码</span>
+                <em class="rightcent marhet">13925057575</em>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <span class="lobalname">身份证号码</span>
+                <em class="rightcent marhet">44686231321321654135</em>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">性别</span>
+                    <em class="rightcent">男</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">地区</span>
+                    <em class="rightcent">广东省广州市</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">邮箱</span>
+                    <em class="rightcent">1170096634@qq.com</em>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media" id="altertext">
+                <a class="mui-navigate-right">
+                    <span class="lobalname">QQ号码</span>
+                    <em class="rightcent">1170096634</em>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="input-row-bj"></div>
+    <div class="input-row">
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" id="input-clear" placeholder="请输入内容">
+        </div>
+        <button class="mui-btn left">取消</button>
+        <button class="mui-btn right">确定</button>
+    </div>
+</div>
 </body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+    $("#showuser").on("click",function(){
+        $(".indexuserbackdrop").css("left","0");
+    });
+    $("#hideuser").on("click",function(){
+        $(".indexuserbackdrop").css("left","-100%");
+    });
+
+    mui('.mui-scroll.scrollw').on('tap','.mui-control-item',function(){
+        var index = $(this).index()+1;
+        window.location = 'fine.html?&fine_id='+index+'';
+    });
+
+    var htmltext = "";
+    $(".mui-table-view").on("click","#altertext",function(){
+        $(".input-row-bj,.indexuserbackdrop .input-row").fadeIn();
+        $("#input-clear").attr("placeholder","请输入"+$(this).find(".lobalname").text()+"");
+        htmltext=$(this).find(".rightcent");
+    });
+
+    $(".input-row").on("click",".mui-btn.left,.mui-btn.right",function(){
+        if($(this).is(".right")){
+            if($("#input-clear").val()!=""){
+                htmltext.text($("#input-clear").val());
+                $("#input-clear").val("");
+            }
+        }
+        $(".input-row-bj,.indexuserbackdrop .input-row").fadeOut();
+    });
+</script>
 </html>

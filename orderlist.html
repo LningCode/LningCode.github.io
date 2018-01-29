@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title" id="title">精品好物</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll" style="background: initial;">
+                    <div class="allorderlist">
+                        <div class="cmdtylist">
+                            <div class="m_action clearfix">
+                                <span class="leftaction">臻选好物<em class="odrmsg">已完成</em></span>
+                                <div class="rightaction">
+                                    <span class="mui-icon mui-icon-trash"></span>
+                                </div>
+                            </div>
+                            <div class="shopitem delleft mui-row">
+                                <div class="mui-col-xs-9">
+                                    <a href="#">
+                                        <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                        <div class="item-content">
+                                            <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="sku">网红款撩妹新技能</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mui-col-xs-3 goods_line">
+                                    <p class="price">￥168.00</p>
+                                    <p class="delprice"><del>￥198.00</del></p>
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="section-shop">
+                                <div class="shopitem delleft mui-row">
+                                    <div class="mui-col-xs-9">
+                                        <a href="#">
+                                            <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                            <div class="item-content">
+                                                <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                <p class="sku">网红款撩妹新技能</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mui-col-xs-3 goods_line">
+                                        <p class="price">￥168.00</p>
+                                        <p class="delprice"><del>￥198.00</del></p>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                                <div class="m_action clearfix">
+                                    <span class="leftaction">合计:<em>￥100.00</em></span>
+                                    <div class="rightaction">
+                                        <a href="lookflow.html" class="mui-btn">查看物流</a>
+                                        <a href="lookorder.html" class="mui-btn">查看订单</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cmdtylist">
+                            <div class="m_action clearfix">
+                                <span class="leftaction">臻选好物<em class="odrmsg">已完成</em></span>
+                                <div class="rightaction">
+                                    <span class="mui-icon mui-icon-trash"></span>
+                                </div>
+                            </div>
+                            <div class="shopitem delleft mui-row">
+                                <div class="mui-col-xs-9">
+                                    <a href="#">
+                                        <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                        <div class="item-content">
+                                            <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="sku">网红款撩妹新技能</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mui-col-xs-3 goods_line">
+                                    <p class="price">￥168.00</p>
+                                    <p class="delprice"><del>￥198.00</del></p>
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="section-shop">
+                                <div class="shopitem delleft mui-row">
+                                    <div class="mui-col-xs-9">
+                                        <a href="#">
+                                            <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                            <div class="item-content">
+                                                <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                <p class="sku">网红款撩妹新技能</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mui-col-xs-3 goods_line">
+                                        <p class="price">￥168.00</p>
+                                        <p class="delprice"><del>￥198.00</del></p>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                                <div class="m_action clearfix">
+                                    <span class="leftaction">合计:<em>￥100.00</em></span>
+                                    <div class="rightaction">
+                                        <a href="lookflow.html" class="mui-btn">查看物流</a>
+                                        <a href="lookorder.html" class="mui-btn">查看订单</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui('.mui-scroll-wrapper').scroll();
+</script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">添加地址</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="stiecontent">
+                        <ul class="fillsite">
+                            <li class="fill_li clearfix">
+                                <label class="leftlabel">收货人姓名</label>
+                                <input class="righttext" type="text" placeholder="请输入姓名">
+                            </li>
+                            <li class="fill_li clearfix">
+                                <label class="leftlabel">联系方式</label>
+                                <input class="righttext" type="text" placeholder="请输入电话号码">
+                            </li>
+                            <li class="fill_li arrow clearfix">
+                                <label class="leftlabel">所在地区</label>
+                                <input class="righttext" type="text" placeholder="请输入所在地区">
+                            </li>
+                            <li class="fill_li clearfix">
+                                <label class="leftlabel">详细地址</label>
+                                <textarea class="textarea" name="textarea" id="textarea" cols="30" placeholder="请输入详细地址" rows="4"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <a href="usersite.html" class="mui-btn add-site">保存</a>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

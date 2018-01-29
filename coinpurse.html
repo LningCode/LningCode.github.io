@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header>
+                <a class="pull-left mui-action-back"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title">零钱包</h1>
+                <a href="trading_record.html" class="pull-right">交易记录</a>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="content-view">
+                <div class="ssetmobilehd">
+                    <p class="coinp-logo">钱包余额</p>
+                    <p class="coinp-paysun">￥0.00</p>
+                </div>
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell">
+                        <a href="trading_record.html" class="mui-navigate-right">
+                            <span class="view-text">提现</span>
+                            <em class="mui-badge">￥0.00</em>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a href="recharge.html" class="mui-navigate-right">
+                            <span class="view-text">充值</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="coinp_statement">本服务由微信钱包提供地层技术支持</p>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

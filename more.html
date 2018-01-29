@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header">
+                <h1 class="title">发现</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="content-view">
+                    	<ul class="mui-table-view topmin-10 alert-30">
+                    		<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<img class="moreimg" src="img/more1.jpg" alt="">
+									<span class="view-text">闺蜜圈<em style="color: #8f8f94;font-size: 14px;padding-left: 5px;">超级辣妈的朋友圈</em></span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<img class="moreimg" src="img/more2.jpg" alt="">
+									<span class="view-text">大厅</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="mui-table-view topmin-10 alert-30">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<img class="moreimg" src="img/more3.jpg" alt="">
+									<span class="view-text">相册</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<img class="moreimg" src="img/more4.jpg" alt="">
+									<span class="view-text">好友</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<img class="moreimg" src="img/more5.jpg" alt="">
+									<span class="view-text">内参</span>
+								</a>
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <footer>
+                <a href="index.html" class="home">
+                  <span class="icon icon_home"></span>
+                  <p>首页</p>
+                </a>
+                <a href="fine.html" class="fine">
+                  <span class="icon icon_fine"></span>
+                  <p>好物</p>
+                </a>
+                <a href="trip.html" class="trip">
+                  <span class="icon icon_trip"></span>
+                  <p>出行</p>
+                </a>
+                <a href="more.html" class="more active">
+                  <span class="icon icon_more"></span>
+                  <p>发现</p>
+                </a>
+                <a href="user.html" class="my">
+                  <span class="icon icon_my"></span>
+                  <p>我</p>
+                </a>
+            </footer>
+        </div>  
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+</script>
+</html>

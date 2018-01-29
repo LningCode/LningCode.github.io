@@ -1,0 +1,731 @@
+.mui-segmented-control.mui-scroll-wrapper{
+	height: 40px;
+}
+.pronewtitle{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+	color: #333;
+	position: relative;
+	margin-top: 10px;
+}
+.pronewtitle:after{
+	position: absolute;
+	top: 50%;
+	height: 1px;
+	background: #c8c7cc;
+	display: block;
+	clear: both;
+	content: "";
+	left: 50%;
+	width: 50%;
+	margin-left: 100px;
+}
+.pronewtitle:before{
+	position: absolute;
+	top: 50%;
+	height: 1px;
+	background: #c8c7cc;
+	display: block;
+	clear: both;
+	content: "";
+	right: 50%;
+	width: 50%;
+	margin-right: 100px;
+}
+.mui-scroll{
+	background: #fff;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border:none;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #c5a866;
+	position: relative;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 2px;
+	background: #c5a866;
+	bottom: 0;
+	left: 13px;
+	right: 13px;
+	position: absolute;
+}
+.ProCardList .mui-card{
+	box-shadow: none;
+	border-bottom: 1px solid #c8c7cc;
+	margin:0;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.ProCardList .mui-card:last-child{
+	border-bottom:none;
+}
+.ProCardList .mui-card .card-media img{
+	display: block;
+	width: 100%;
+}
+.ProCardList .card-content .titname{
+	font-size: 18px;
+	font-weight:500;
+	color: #333;
+	padding:15px 0;
+	line-height: 22px;
+}
+.ProCardList .card-content .remark{
+	color: #c8c7cc;
+	font-size: 15px;
+	padding-bottom: 15px;
+}
+.card-content .footprc{
+	font-size: 16px;
+	color: #ff404b;
+	padding-bottom: 10px;
+}
+.card-content .footprc .del{
+	color: #c8c7cc;
+}
+.ProCardList .mui-card .btndet{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	padding: 7px 11px;
+	background: #c5a866;
+	color: #fff;
+	border:none;
+}
+
+/*购物车*/
+.chat_scroll_view{
+	position: absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    display: none;
+}
+.chat_scroll_view .suspendchatbar{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 55;
+    color: #717171;
+    box-shadow: 0 0 3px #E7E7E7;
+}
+.suspendchatbar .allcheck{
+	height: 45px;
+	line-height: 45px;
+}
+.suspendchatbar .mui-checkbox.mui-left label{
+	padding-right:0;
+	padding-left: 40px;
+}
+.suspendchatbar .mui-checkbox.mui-left input[type=checkbox]{
+	left: 10px;
+	top: 10px;
+}
+.suspendchatbar .mui-checkbox input[type=checkbox]:checked:before{
+	color: #e9b734;
+}
+.suspendchatbar .sunnub{
+	text-align: left;
+	line-height: 45px;
+}
+.suspendchatbar .sunnub .price{
+	color: #f0445c;
+	font-size: 18px;
+    font-weight: 600;
+}
+.suspendchatbar .setorder .anpay{
+	background: #e9b734;
+	border: none;
+    font-size: 16px;
+    height: 45px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 0;
+    width: 100%;
+}
+.cmdtylistbox{
+	margin-bottom: 15px;
+}
+.chat_scroll_view .hotprolist{
+	padding-bottom: 45px;
+}
+.hotprolist .hottit{
+	margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+.cmdtylist .head_wrap,.cmdtylist .wrapitem{
+	padding:10px 0 0 10px;
+}
+.cmdtylist .mui-checkbox.mui-left input[type=checkbox]{
+	left: 0;
+	top: 10px;
+}
+.cmdtylist .mui-checkbox input[type=checkbox]:checked:before{
+	color: #e9b734;
+}
+.cmdtylist .username{
+	line-height: 42px;
+	display: inline-block;
+	max-height: 37px;
+}
+.cmdtylist .shopitem .mui-btn{
+	width: 25%;
+	border-bottom: 1px solid #E7E7E7;
+}
+.cmdtylist .shopitem{
+	margin-left: 38px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.cmdtylist .wrapitem{
+	border-bottom: 1px solid #E7E7E7;
+}
+.cmdtylist .shopitem.shophead{
+	border-bottom: 1px solid #E7E7E7;
+}
+.cmdtylist .shopitem .item-img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.cmdtylist .shopitem .item-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.cmdtylist .item-content{
+	padding-left: 90px;
+}
+.cmdtylist .item-content .sku,.goods_line .delprice{
+	color: #c8c7cc;
+	font-size: 14px;
+}
+.cmdtylist .item-content .name{
+	font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    padding-top: 3px;
+    padding-bottom: 8px;
+    line-height: 18px;
+}
+.cmdtylist .goods_line{
+	text-align: right;
+	color: #c8c7cc;
+}
+.cmdtylist .goods_line .price{
+	font-size: 16px;
+	font-weight: 600;
+	color: #f0445c;
+	padding-top: 3px;
+    padding-bottom: 8px;
+}
+.cmdtylist .goods_line .delprice{
+	padding-bottom: 5px;
+}
+.order_scroll_view{
+	position: absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    display: none;
+}
+.cmdtylist .shopitem.delleft{
+	margin-left: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.cmdtylist .m_action{
+	padding: 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.cmdtylist .m_action .leftaction{
+	line-height: 31px;
+    font-size: 14px;
+    color: #c8c7cc;
+}
+.m_action .leftaction em{
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.cmdtylist .m_action .rightaction{
+	float: right;
+}
+.m_action .rightaction .mui-btn{
+	padding: 5px 8px;
+	font-size: 13px;
+	color: #c8c7cc;
+	border:1px solid #c8c7cc;
+}
+.allorderlist .cmdtylist{
+	background: #fff;
+	margin-bottom: 10px;
+}
+.allorderlist .cmdtylist:last-child{
+	margin-bottom: 0;
+}
+.cmdtylist .m_action .leftaction .odrmsg{
+	padding-left: 5px;
+	font-size: 13px;
+	color: #c5a866;
+	border-left:1px solid #E7E7E7;
+	margin-left: 8px;
+}
+
+/*查看物流*/
+/* .cmdtylist .item-img .allsun{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 11px;
+	color: #fff;
+	line-height: 16px;
+	background: #000;
+	opacity: 0.7;
+} */
+.allorderlist .FlowTop{
+	padding: 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.FlowTop .Flowhdimg{
+	float: left;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+}
+.FlowTop .Flowhdimg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.FlowTop .Flowhdimg .allsun{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+	line-height: 16px;
+	background: #000;
+	opacity: 0.7;
+	text-align: center;
+	font-size: 11px;
+}
+.FlowTop .FlowCent{
+	padding-left: 80px;
+	padding-top: 3px;
+}
+.FlowTop .FlowCent p{
+	line-height: 22px;
+	font-size: 13px;
+}
+.FlowTop .FlowCent p em{
+	color: #333;
+	padding-left: 5px;
+}
+.allorderlist .FlowBody{
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+.FlowBodyUl .FlowLi{
+	position: relative;
+	padding:10px 10px 10px 25px;
+}
+.FlowBodyUl .FlowLi:after{
+	display: block;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	left: 25px;
+	right: 0;
+	background: #E7E7E7;
+}
+.FlowBodyUl .FlowLi:last-child:after{
+	background: none;
+}
+.FlowBodyUl .FlowLi:last-child{
+	padding-bottom: 0;
+}
+.FlowLi .FlowLeft{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	display: block;
+    width: 1px;
+    height: 100%;
+    background: #E7E7E7;
+}
+.FlowLi .FlowLeft:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -3px;
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-radius: 8px;
+	background: #c5a866;
+}
+.FlowBodyUl .FlowLi:last-child .FlowLeft:after{
+	bottom: 0px;
+    top: initial;
+    margin-top: 0;
+}
+.FlowBodyUl .FlowLi:first-child .FlowLeft{
+	top: 50%;
+}
+.FlowBodyUl .FlowLi:first-child .FlowLeft:after{
+	top: 0;
+    margin-top: 0;
+}
+/*订单详情*/
+.allorderlist .dealstate{
+	background: #4cd964;
+	font-size: 18px;
+	color: #fff;
+	line-height: 20px;
+	position: relative;
+	padding: 15px 10px;
+}
+.allorderlist .dealstate .mui-icon{
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	line-height: 17px;
+    text-align: center;
+    margin-right: 8px;
+}
+.allorderlist .order_progress{
+	padding-left:10px;
+	position: relative;
+}
+.order_progress .arrowflow{
+	display: block;
+	border-bottom: 1px solid #E7E7E7;
+	font-size: 15px;
+    color: #c8c7cc;
+    padding: 13px 0;
+    position: relative;
+}
+.order_progress .arrowflow .mui-icon-arrowright{
+	position: absolute;
+	right: 5px;
+	top: 12px;
+}
+.order_progress .arrowflow .mui-icon-map{
+	position: absolute;
+	top: 12px;
+	left: 0;
+}
+.order_progress .arrowflow .textif{
+	padding: 0 30px;
+}
+.order_progress .order_detail{
+	padding: 20px 0;
+	border-bottom: 1px solid #E7E7E7;
+}
+.order_progress .order_detail .mui-icon-map{
+	display: block;
+	float: left;
+	width: 30px;
+	color: #c8c7cc;
+}
+.order_detail .detmap{
+	padding-left: 30px;
+	padding-right: 10px;
+}
+.order_detail .detmap p{
+	color: #c8c7cc;
+	font-size: 13px;
+}
+.cmdtylist .order_inner{
+	padding: 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.order_inner .order_money{
+	font-size: 14px;
+	color: #333;
+}
+.m_action.btn-refer{
+	text-align: center;
+}
+.m_action.btn-refer .mui-btn{
+	color: #c5a866;
+	width: 35%;
+	border:1px solid #c5a866;
+}
+.allorderlist .order_total{
+	padding: 10px 10px 25px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.allorderlist .order_total p,.cmdtylist .order_inner p{
+	font-size: 14px;
+	color: #c8c7cc;
+	padding-bottom: 6px;
+}
+.cmdtylist .order_inner p span{
+	float: right;
+}
+.allorderlist .order_total p span,.cmdtylist .order_inner p span{
+	color: #333;
+	padding-left: 3px;
+	font-size: 13px;
+}
+.bottom-fxied .delorderbtn{
+	width: 100%;
+	border: none;
+	padding: 15px 12px;
+	color: #fff;
+	border-radius: 0;
+}
+.bottom-fxied .lookflowbtn{
+	width: 100%;
+	border: none;
+	background: #c5a866;
+	color: #fff;
+	border-radius: 0;
+	padding: 15px 12px;
+}
+
+/*我的卡卷*/
+.pull-right.mui-icon-help{
+	font-size: 20px;
+	color: #c5a866;
+}
+.expired_ecard_card{
+	width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: #333;
+    font-size: 16px;
+}
+.ecard_item .expired_ecard{
+	padding: 10px;
+	padding-top: 0;
+}
+.expired_ecard_upper .expired_logo{
+	float: left;
+	width: 60px;
+	color: #fff;
+	text-align: center;
+}
+.expired_ecard_upper .expired_logo .mui-icon{
+	font-size: 40px;
+}
+.expired_ecard_upper .expired_ecard_msg{
+	padding-left: 65px;
+}
+.expired_ecard_upper .expired_ecard_msg p{
+	font-size: 13px;
+	color: #fff;
+	padding-top: 3px;
+}
+.expired_ecard .expired_ecard_upper{
+	color:#fff;
+	background: -webkit-linear-gradient(#cbcbcb,silver);
+    background: linear-gradient(#cbcbcb,silver);
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+}
+.expired_ecard .expired_ecard_lower{
+	background: #c5a866;
+	border-radius: 0 0 4px 4px;
+	padding: 10px;
+}
+.expired_ecard_lower .expired_ecard_balance{
+	color: #cbcbcb;
+	font-size: 18px;
+}
+.expired_ecard_lower .expired_ecard_describe{
+	color: #cbcbcb;
+	font-size: 13px;
+	padding-top: 8px;
+}
+
+.mui-popover .top-fixed .mui-icon-close{
+	font-size: 22px;
+	color: #e9b734;
+}
+.mui-popover .rule_scroll{
+	background: #fff;
+	position: relative;
+}
+.mui-popover .mui-scroll-wrapper{
+	margin: 0;
+}
+.rule_scroll .rule_tite{
+	margin: 0;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	padding: 20px 0;
+}
+.rule_wrap .rule_block{
+	padding: 15px 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.rule_block .hdblocktit{
+	font-size: 16px;
+    color: #333;
+    padding: 20px 0;
+}
+
+/*保险服务*/
+.insurance-content{
+
+}
+.insurance_row .insurance_list{
+	padding: 10px;
+	border-bottom: 1px solid #E7E7E7;
+}
+.insurance_list .insur_img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	overflow: hidden;
+}
+.insurance_list .insur_img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.insurance_list .insur_center{
+	margin-left: 90px;
+	min-height: 80px;
+	position: relative;
+}
+.insurance_list .insur_name{
+	color: #333;
+    font-size: 16px;
+    padding: 3px 0 6px;
+}
+.insurance_list .insur_msg{
+	color: #c8c7cc;
+}
+.insurance_list .insur_price{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #ff404b;
+	right: 0;
+}
+.insurance_list .insur_price .rightsun{
+	float: right;
+}
+.insurance_list .insur_price .rightsun em{
+	color: #333;
+	font-size: 12px;
+}
+
+/*现金借款*/
+.cash_list .topviewinner{
+	padding-bottom: 15px;
+}
+.cash_list .topviewinner img{
+	display: block;
+	width: 100%;
+}
+.cash_list .cash_ecard_inner{
+	padding:8px 15px;
+}
+.cash_ecard_inner .cash_ecard_m{
+	border-radius: 3px;
+	box-shadow: 0 0 5px 1px #E7E7E7;
+}
+.cash_ecard_inner .cash_ecard_hd{
+	padding:10px 15px;
+	font-size: 16px;
+	color: #333;
+}
+.cash_ecard_hd .cash_name{
+	padding-bottom: 10px;
+	min-height: 50px;
+	font-size: 20px;
+	line-height: 40px;
+	overflow: hidden;
+}
+.cash_ecard_hd .cash_name .isonimg img,.cash_ecard_hd .cash_name .isonimg{
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 5px;
+}
+.cash_ecard_hd .cash_maxsun{
+	padding-bottom: 10px;
+	color: #ff404b;
+	font-size: 18px;
+	line-height: 20px;
+}
+.cash_ecard_hd .cash_maxsun .size{
+	color: #777;
+	font-size: 12px;
+}
+.cash_ecard_hd .cash_tag{
+	color: #c5a866;
+}
+.cash_ecard_hd .cash_tag .tag{
+	border-radius: 15px;
+	border:1px solid #c5a866;
+	display: inline-block;
+	padding: 0 7px;
+    font-size: 12px;
+    height: 21px;
+    margin-bottom: 10px;
+}
+.cash_ecard_hd .cash_path{
+	color: #c8c7cc;
+	padding: 10px 0;
+}
+.cash_ecard_btn .mui-btn{
+	width: 100%;
+	border:none;
+	background: #fff;
+	color: #c5a866;
+	font-size: 15px;
+	border-radius: 0;
+	box-shadow: 0 0 5px 1px #E7E7E7;
+	padding: 10px 12px;
+}
+.cash_ecard_btn .mui-btn.btnlink{
+	background: #c5a866;
+	color: #fff;
+}
+
+
+
+
+
+
+
+

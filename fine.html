@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>触屏版</title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/listdet.css">
+</head>
+<body>
+<div class="webview" id="webview">
+    <div class="scrollview">
+        <div class="top-fixed">
+            <header id="header" class="">
+                <a class="pull-left mui-action-back" href="signin.html"><em class="mui-icon mui-icon-back"></em>返回</a>
+                <h1 class="title" id="title">精品好物</h1>
+            </header>
+        </div>
+        <div class="scroll-wrap">
+            <div id="slider" class="mui-slider mui-fullscreen" style="background: #fff;">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll">
+                        <a class="mui-control-item mui-active" data-index="0">全部</a>
+                        <a class="mui-control-item" data-index="1">情人节</a>
+                        <a class="mui-control-item" data-index="2">穿搭</a>
+                        <a class="mui-control-item" data-index="3">文创</a>
+                        <a class="mui-control-item" data-index="4">玩物</a>
+                        <a class="mui-control-item" data-index="5">茶叶</a>
+                        <a class="mui-control-item" data-index="6">个人护理</a>
+                    </div>
+                </div>
+                <div class="mui-slider-group">
+                    <div class="mui-slider-item mui-control-content mui-active">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/qrj.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">女朋友最喜欢收到的情人节甲油礼盒</p>
+                                            <p class="remark">大牌明星同款，限量发售!</p>
+                                            <p class="footprc">
+                                                <span class="price">￥299.00</span>
+                                                <del class="del">￥329.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/gzxgz.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">"贵族小公主"拉菲丽丝甜白双支礼盒</p>
+                                            <p class="remark">喝的每一口都是那么香甜</p>
+                                            <p class="footprc">
+                                                <span class="price">￥1666.00</span>
+                                                <del class="del">￥1699.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/gblh.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">只送给一生挚爱的玫瑰钢笔礼盒</p>
+                                            <p class="remark">笔尖流畅着我对你的痴情！</p>
+                                            <p class="footprc">
+                                                <span class="price">￥258.00</span>
+                                                <del class="del">￥319.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/khlh.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节精选 | 迪士尼限量版口红礼盒送给最亲爱的她</p>
+                                            <p class="remark">女友最爱的礼物，怎么送都不出错</p>
+                                            <p class="footprc">
+                                                <span class="price">￥199.00</span>
+                                                <del class="del">￥220.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/flmxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">瞬间引爆恋爱魔力的费洛蒙香水</p>
+                                            <p class="remark">闻香而动，甜蜜诱惑</p>
+                                            <p class="footprc">
+                                                <span class="price">￥99.00</span>
+                                                <del class="del">￥129.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/nntlh.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">哄女友最奏效的牛奶糖礼盒</p>
+                                            <p class="remark">跟喜欢的人一起吃，每天都是情人节</p>
+                                            <p class="footprc">
+                                                <span class="price">￥148.00</span>
+                                                <del class="del">￥178.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                            <p class="remark">让她如此与众不同</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥219.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="remark">网红款撩妹新技能</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥198.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                            <p class="remark">让她如此与众不同</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥219.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="remark">网红款撩妹新技能</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥198.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/flmxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">瞬间引爆恋爱魔力的费洛蒙香水</p>
+                                            <p class="remark">闻香而动，甜蜜诱惑</p>
+                                            <p class="footprc">
+                                                <span class="price">￥99.00</span>
+                                                <del class="del">￥129.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/nntlh.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">哄女友最奏效的牛奶糖礼盒</p>
+                                            <p class="remark">跟喜欢的人一起吃，每天都是情人节</p>
+                                            <p class="footprc">
+                                                <span class="price">￥148.00</span>
+                                                <del class="del">￥178.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/qrj.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">女朋友最喜欢收到的情人节甲油礼盒</p>
+                                            <p class="remark">大牌明星同款，限量发售!</p>
+                                            <p class="footprc">
+                                                <span class="price">￥299.00</span>
+                                                <del class="del">￥329.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/gzxgz.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">"贵族小公主"拉菲丽丝甜白双支礼盒</p>
+                                            <p class="remark">喝的每一口都是那么香甜</p>
+                                            <p class="footprc">
+                                                <span class="price">￥1666.00</span>
+                                                <del class="del">￥1699.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                            <p class="remark">让她如此与众不同</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥219.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="remark">网红款撩妹新技能</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥198.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                            <p class="remark">让她如此与众不同</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥219.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="remark">网红款撩妹新技能</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥198.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-slider-item mui-control-content">
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <p class="pronewtitle">用最优雅的姿态去爱</p>
+                                <ul class="ProCardList">
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                            <p class="remark">让她如此与众不同</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥219.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                    <li class="mui-card">
+                                        <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                        <div class="card-content">
+                                            <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="remark">网红款撩妹新技能</p>
+                                            <p class="footprc">
+                                                <span class="price">￥168.00</span>
+                                                <del class="del">￥198.00</del>
+                                            </p>
+                                        </div>
+                                        <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 购物车 -->
+            <div class="chat_scroll_view">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="cmdtylistbox">
+                            <div class="cmdtylist">
+                                <div class="head_wrap">
+                                    <div class="mui-input-row mui-checkbox mui-left">
+                                        <input name="checkbox" value="Item 1" type="checkbox">
+                                        <div class="shopitem shophead">
+                                            <span class="username">茶界小吧主</span>
+                                            <button class="mui-btn">编辑</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapitem">
+                                    <div class="mui-input-row mui-checkbox mui-left">
+                                        <input name="checkbox" value="Item 1" type="checkbox">
+                                        <div class="shopitem shopbd mui-row">
+                                            <div class="mui-col-xs-9">
+                                                <a href="#">
+                                                    <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                                    <div class="item-content">
+                                                        <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                        <p class="sku">网红款撩妹新技能</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mui-col-xs-3 goods_line">
+                                                <p class="price">￥168.00</p>
+                                                <p class="delprice"><del>￥198.00</del></p>
+                                                <span>x1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cmdtylist">
+                                <div class="head_wrap">
+                                    <div class="mui-input-row mui-checkbox mui-left">
+                                        <input name="checkbox" value="Item 1" type="checkbox">
+                                        <div class="shopitem shophead">
+                                            <span class="username">茶界小吧主</span>
+                                            <button class="mui-btn">编辑</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapitem">
+                                    <div class="mui-input-row mui-checkbox mui-left">
+                                        <input name="checkbox" value="Item 1" type="checkbox">
+                                        <div class="shopitem shopbd mui-row">
+                                            <div class="mui-col-xs-9">
+                                                <a href="#">
+                                                    <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                                    <div class="item-content">
+                                                        <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                        <p class="sku">网红款撩妹新技能</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mui-col-xs-3 goods_line">
+                                                <p class="price">￥168.00</p>
+                                                <p class="delprice"><del>￥198.00</del></p>
+                                                <span>x1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotprolist">
+                            <h3 class="hottit">最受欢迎的商品</h3>
+                            <ul class="ProCardList">
+                                <li class="mui-card">
+                                    <div class="card-media"><img src="upload/poxs.jpg" alt=""></div>
+                                    <div class="card-content">
+                                        <p class="titname">恋爱的最佳礼物，Popscent香水</p>
+                                        <p class="remark">让她如此与众不同</p>
+                                        <p class="footprc">
+                                            <span class="price">￥168.00</span>
+                                            <del class="del">￥219.00</del>
+                                        </p>
+                                    </div>
+                                    <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                </li>
+                                <li class="mui-card">
+                                    <div class="card-media"><img src="upload/cmtt.jpg" alt=""></div>
+                                    <div class="card-content">
+                                        <p class="titname">情人节屁桃丑萌套套礼盒</p>
+                                        <p class="remark">网红款撩妹新技能</p>
+                                        <p class="footprc">
+                                            <span class="price">￥168.00</span>
+                                            <del class="del">￥198.00</del>
+                                        </p>
+                                    </div>
+                                    <a href="statedetails.html" class="mui-btn btndet">查看详情</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="suspendchatbar mui-row">
+                    <div class="mui-col-xs-3 allcheck">
+                        <div class="mui-input-row mui-checkbox mui-left">
+                            <label>全选</label>
+                            <input name="checkbox" value="Item 1" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="mui-col-xs-5 sunnub">合计 : <em class="price">￥0.00</em></div>
+                    <div class="mui-col-xs-4 setorder"><a href="#" class="mui-btn anpay">结算</a></div>
+                </div>
+            </div>
+            <!-- 订单 -->
+            <div class="order_scroll_view">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="cmdtylist">
+                            <div class="shopitem delleft mui-row">
+                                <div class="mui-col-xs-9">
+                                    <a href="#">
+                                        <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                        <div class="item-content">
+                                            <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                            <p class="sku">网红款撩妹新技能</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mui-col-xs-3 goods_line">
+                                    <p class="price">￥168.00</p>
+                                    <p class="delprice"><del>￥198.00</del></p>
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="section-shop">
+                                <div class="shopitem delleft mui-row">
+                                    <div class="mui-col-xs-9">
+                                        <a href="#">
+                                            <div class="item-img"><img src="upload/bg.jpg" alt=""></div>
+                                            <div class="item-content">
+                                                <p class="name">情人节屁桃丑萌套套礼盒</p>
+                                                <p class="sku">网红款撩妹新技能</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mui-col-xs-3 goods_line">
+                                        <p class="price">￥168.00</p>
+                                        <p class="delprice"><del>￥198.00</del></p>
+                                        <span>x1</span>
+                                    </div>
+                                </div>
+                                <div class="m_action clearfix">
+                                    <span class="leftaction">合计:<em>￥100.00</em></span>
+                                    <div class="rightaction">
+                                        <span class="mui-btn">查看物流</span>
+                                        <span class="mui-btn">查看订单</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-fxied">
+            <footer>
+                <a id="hwroute" data-index="0" class="icon_hw">
+                  <span class="icon"><img src="img/home.jpg" alt=""></span>
+                  <p>好物</p>
+                </a>
+                <a id="chatroute" data-index="1" class="icon_chat">
+                  <span class="icon"><img src="img/trip.jpg" alt=""></span>
+                  <p>购物车</p>
+                </a>
+                <a id="orderroute" data-index="2" class="icon_order">
+                  <span class="icon"><img src="img/order.jpg" alt=""></span>
+                  <p>订单</p>
+                </a>
+            </footer>
+        </div>  
+    </div>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.slim.js"></script>
+<script>
+    document.addEventListener('touchmove',function(event){event.preventDefault()},true);
+     mui.ready(function() {
+        mui('.mui-scroll-wrapper').scroll({
+            bounce: true,
+            indicators: true,
+            deceleration:mui.os.ios?0.003:0.0009
+        });
+        mui('.mui-scroll').on('tap','.mui-control-item:not(.mui-active)',function(){
+            mui('#slider').slider().gotoItem(this.getAttribute('data-index'));
+        });
+
+        //获取url参数
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null){
+                return unescape(r[2]);
+            }
+            return null;
+        }
+        mui('#slider').slider().gotoItem(getQueryString("fine_id"));
+    });
+    mui('.mui-slider-group').on('tap','a',function(){document.location.href=this.href;});
+
+    $(".bottom-fxied").on("click","#hwroute,#chatroute,#orderroute",function(){
+        if($(this).attr("data-index") == "0"){
+            $(".chat_scroll_view,.order_scroll_view").hide();
+            $("#title").text("精品好物");
+        }else if($(this).attr("data-index") == "1"){
+            $(".chat_scroll_view").show();
+            $(".order_scroll_view").hide();
+            $("#title").text("购物车");
+        }else if($(this).attr("data-index") == "2"){
+            $(".order_scroll_view").show();
+            $(".chat_scroll_view").hide();
+            $("#title").text("订单");
+        }
+    });
+</script>
+</html>
