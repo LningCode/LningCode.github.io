@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="./jquery.rotate.js"></script>
+	<style id="style">
+		html,body,ul,ul li{padding:0;margin: 0;}
+		ul li{list-style:none}
+		.row-turn{
+			margin: 30px auto;
+			width: 500px;
+		}
+		.row-turn .turn-box{
+			width: 100%;
+			position: relative;
+		}
+		.turn-bg img,.turn-arrow img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.turn-arrow{
+			width: 175px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -88px;
+			margin-top: -115px;
+		}
+		.turn-nub{
+			font-size: 20px;
+			color: red;
+			position: relative;
+		}
+		.turn-nub .sum{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+		    line-height: 234px;
+		    right: 0;
+		    text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="row-turn">
+		<div class="turn-box">
+			<div class="turn-bg" id="rotate"><img src="http://www.lanrenzhijia.com/demos/47/4765/demo/img/dipan.png" alt=""></div>
+			<div class="turn-arrow" id="arrow">
+				<div class="turn-nub">
+					<img src="http://www.lanrenzhijia.com/demos/47/4765/demo/img/zhizhen.png" alt="">
+					<div class="sum">点击开始<span>0</span>次</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	</div>
+</body>
+<script>
+    window.onload=function(){
+    	var arr = [20,68,112,156,200,243,290,337];//中奖区域
+    	var i = 0;//抽奖数次
+    	var sum = 1;//后台返回的随机数
+    	var start = 20;//默认启动的指针
+    	$("#rotate").css({
+            	"transform":"rotate("+start+"deg)",
+            	'-webkit-animation':'rotate 6s ease 0s 1 forwards'
+            })
+        arrow.onclick=function(){
+        	i++;
+        	sum=i;
+            var ready=false;
+            var oH=document.getElementsByTagName('head')[0];
+            var oS=document.createElement('style');
+            oH.appendChild(oS);
+            oS.innerHTML=
+                '@keyframes rotate{from{-webkit-transform:rotate('+start+'deg)}to{-webkit-transform:rotate('+(3240+arr[sum])+'deg)}}';
+            $("#rotate").css({
+            	"transform":"rotate("+(3240+arr[sum])+"deg)",
+            	'-webkit-animation':'rotate 6s ease 0s 1 forwards'
+            })
+            $("#arrow .sum span").text(i);    
+            rotate.addEventListener('animationend',function(){
+                if(ready)return;
+                ready=true;
+                document.getElementsByTagName('head')[0].removeChild(oS);
+            },false);
+        };
+    };
+</script>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- <style>
+		html,body,ul,ul li{padding:0;margin: 0;}
+		ul li{list-style:none}
+		.row_slider{
+			position: relative;
+			margin: 30px auto;
+			width: 590px;
+			height: 470px;
+			z-index: 1;
+			overflow: hidden;
+		}
+		.row_slider .btn{
+			position: absolute;
+			top: 50%;
+			z-index: 3;
+			display: block;
+			width: 30px;
+			height: 50px;
+			text-align: center;
+			font-size: 20px;
+			background: #999;
+			line-height: 50px;
+			margin-top: -25px;
+			color: #fff;
+		}
+		.row_slider .btn.btn-left{
+			left: -30px;
+		}
+		.row_slider .btn.btn-right{
+			right: -30px;
+		}
+		.slider_box{
+			width: 100%;
+			height: 470px;
+		}
+		.slider_list li{
+			float: left;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 590px;
+			height: 470px;
+		}
+		.slider_list li img{
+			display: block;
+			width: 100%;
+		}
+		.slider_tab{
+			position: absolute;
+			bottom: 7%;
+			left: 0;
+			right: 0;
+			z-index: 3;
+			text-align: center;
+		}
+		.slider_tab i{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background: #222;
+			border-radius: 50%;
+			margin-right: 5px;
+		}
+		.slider_tab i.active{
+			background: red;
+		}
+	</style> -->
+<style>
+	body{background-color: #262626}
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.slide{
+		width: 100%;
+		min-height: 180px;
+		overflow: hidden;
+		position: relative;
+
+	}
+	.slide .img{
+		overflow: hidden;
+		position: absolute;
+		transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
+	}
+	.slide .img img{
+		width: calc(100% - 14px);
+		height: calc(100% - 14px);
+		margin: 7px;
+	}
+	.slide .img1{
+		width: 40%;
+		height: 40%;
+		top: 30%;
+		left: -50%;
+		z-index: 1;
+	}
+	.slide .img2{
+		width: 60%;
+		height: 60%;
+		top: 20%;
+		left: -20%;
+		z-index: 2;
+	}
+	.slide .img3{
+		width: 80%;
+		height: 80%;
+		top: 10%;
+		left: 10%;
+		z-index: 3;
+	}
+	.slide .img4{
+		width: 60%;
+		height: 60%;
+		top: 20%;
+		left: 60%;
+		z-index: 2;
+	}
+	.slide .img5{
+		width: 40%;
+		height: 40%;
+		top: 30%;
+		left: 110%;
+		z-index: 1;
+	}
+	.slide-bt{
+		position: absolute;
+		left: 50%;
+		bottom: 13%;
+		z-index: 10;
+	}
+	.slide-bt span{
+		width: 24px;
+		height: 8px;
+		background: #c9caca;
+		float: left;
+		margin: 5px;
+		border-radius: 4px;
+	}
+	.slide .slide-bt .on{
+		background: #ffd200;
+	}
+	button{
+		width: 50px;
+		margin: 20px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="slide" class="slide">
+			<div class="img img1" data-slide-imgid="0">
+				<img src="http://www.lanrenzhijia.com/demos/39/3950/demo/image/1.png">
+			</div>
+			<div class="img img2" data-slide-imgid="1">
+				<img src="http://www.lanrenzhijia.com/demos/39/3950/demo/image/2.png">
+			</div>
+			<div class="img img3" data-slide-imgid="2">
+				<img src="http://www.lanrenzhijia.com/demos/39/3950/demo/image/3.png">
+			</div>
+			<div class="img img4" data-slide-imgid="3">
+				<img src="http://www.lanrenzhijia.com/demos/39/3950/demo/image/4.png">
+			</div>
+			<div class="img img5" data-slide-imgid="4">
+				<img src="http://www.lanrenzhijia.com/demos/39/3950/demo/image/5.png">
+			</div>
+
+			<div class="slide-bt"></div>
+		</div>
+		<button onclick="left()">上一页</button>
+		<button onclick="right()">下一页</button>
+	</div>
+	<!-- <div class="row_slider">
+		<div class="slider_box">
+			<ul class="slider_list">
+				<li>
+					<a href="#">
+						<img src="https://img1.360buyimg.com/pop/jfs/t18745/348/2043692452/91105/39942d1a/5ae2e681Na5b0cc1b.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://m.360buyimg.com/babel/jfs/t16978/251/1910034446/79860/8f38c523/5adfe2fcN33526660.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="https://img1.360buyimg.com/pop/jfs/t18085/269/768603802/98513/46adf35f/5aa74aadN0a6f15fe.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="slider_tab">
+			<i class="active"></i>
+			<i></i>
+			<i></i>
+		</div>
+		<span class="btn btn-left"><</span>
+		<span class="btn btn-right">></span>
+	</div> -->
+</body>
+<script>
+	var autoLb = false;          //autoLb=true为开启自动轮播
+	var autoLbtime = 1;         //autoLbtime为轮播间隔时间（单位秒）
+	var touch = true;           //touch=true为开启触摸滑动
+	var slideBt = true;         //slideBt=true为开启滚动按钮
+	var slideNub;               //轮播图片数量
+
+	//窗口大小改变时改变轮播图宽高
+	$(window).resize(function(){
+		$(".slide").height($(".slide").width()*0.56);
+	});
+
+
+	$(function(){
+		$(".slide").height($(".slide").width()*0.56);
+		slideNub = $(".slide .img").size();             //获取轮播图片数量
+		// for(i=0;i<slideNub;i++){
+		// 	$(".slide .img:eq("+i+")").attr("data-slide-imgId",i);
+		// }
+
+		//根据轮播图片数量设定图片位置对应的class
+		if(slideNub==1){
+			for(i=0;i<slideNub;i++){
+				$(".slide .img:eq("+i+")").addClass("img3");
+			}
+		}
+		if(slideNub==2){
+			for(i=0;i<slideNub;i++){
+				$(".slide .img:eq("+i+")").addClass("img"+(i+3));
+			}
+		}
+		if(slideNub==3){
+			for(i=0;i<slideNub;i++){
+				$(".slide .img:eq("+i+")").addClass("img"+(i+2));
+			}
+		}
+		if(slideNub>3&&slideNub<6){
+			for(i=0;i<slideNub;i++){
+				$(".slide .img:eq("+i+")").addClass("img"+(i+1));
+			}
+		}
+		if(slideNub>=6){
+			for(i=0;i<slideNub;i++){
+				if(i<5){
+				   $(".slide .img:eq("+i+")").addClass("img"+(i+1)); 
+				}else{
+					$(".slide .img:eq("+i+")").addClass("img5"); 
+				}
+			}
+		}
+
+		//根据轮播图片数量设定轮播图按钮数量
+		if(slideBt){
+			for(i=1;i<=slideNub;i++){
+				$(".slide-bt").append("<span data-slide-bt='"+i+"' onclick='tz("+i+")'></span>");
+			}
+			$(".slide-bt").width(slideNub*34);
+			$(".slide-bt").css("margin-left","-"+slideNub*17+"px");
+		}
+
+		//自动轮播
+		if(autoLb){
+			setInterval(function(){
+			right();
+		}, autoLbtime*1000);
+		}
+
+
+		if(touch){
+			k_touch();
+		}
+		slideLi();
+		imgClickFy();
+	})
+
+	//右滑动
+	function right(){
+		var fy = new Array();
+		for(i=0;i<slideNub;i++){
+			fy[i]=$(".slide .img[data-slide-imgId="+i+"]").attr("class");
+		}
+		for(i=0;i<slideNub;i++){
+			if(i==0){
+				$(".slide .img[data-slide-imgId="+i+"]").attr("class",fy[slideNub-1]);
+			}else{
+			   $(".slide .img[data-slide-imgId="+i+"]").attr("class",fy[i-1]); 
+			}
+		}
+		imgClickFy();
+		slideLi();
+	}
+
+	//左滑动
+	function left(){
+		var fy = new Array();
+		for(i=0;i<slideNub;i++){
+			fy[i]=$(".slide .img[data-slide-imgId="+i+"]").attr("class");
+		}
+		for(i=0;i<slideNub;i++){
+			if(i==(slideNub-1)){
+				$(".slide .img[data-slide-imgId="+i+"]").attr("class",fy[0]);
+			}else{
+			   $(".slide .img[data-slide-imgId="+i+"]").attr("class",fy[i+1]); 
+			}
+		}
+		imgClickFy();
+		slideLi();
+	}
+
+	//轮播图片左右图片点击翻页
+	function imgClickFy(){
+		$(".slide .img").removeAttr("onclick");
+		$(".slide .img2").attr("onclick","left()");
+		$(".slide .img4").attr("onclick","right()");
+	}
+
+	//修改当前最中间图片对应按钮选中状态
+	function slideLi(){
+		var slideList = parseInt($(".slide .img3").attr("data-slide-imgId")) + 1;
+		$(".slide-bt span").removeClass("on");
+		$(".slide-bt span[data-slide-bt="+slideList+"]").addClass("on");
+	}
+
+	//轮播按钮点击翻页
+	function tz(id){
+		var tzcs = id - (parseInt($(".slide .img3").attr("data-slide-imgId")) + 1);
+		if(tzcs>0){
+			for(i=0;i<tzcs;i++){
+				setTimeout(function(){
+				  right();  
+				},1);
+			}
+		}
+		if(tzcs<0){
+			tzcs=(-tzcs);
+			for(i=0;i<tzcs;i++){
+				setTimeout(function(){
+				  left();  
+				},1);
+			}
+		}
+		slideLi();
+	}
+
+
+	//触摸滑动模块
+	function k_touch() {
+		var _start = 0, _end = 0, _content = document.getElementById("slide");
+		_content.addEventListener("touchstart", touchStart, false);
+		_content.addEventListener("touchmove", touchMove, false);
+		_content.addEventListener("touchend", touchEnd, false);
+		function touchStart(event) {
+			var touch = event.targetTouches[0];
+			_start = touch.pageX;
+		}
+		function touchMove(event) {
+			var touch = event.targetTouches[0];
+			_end = (_start - touch.pageX);
+		}
+
+		function touchEnd(event) {
+			if (_end < -100) {
+				left();
+				_end=0;
+			}else if(_end > 100){
+				right();
+				_end=0;
+			}
+		}
+	}
+
+</script>
+<!-- <script>
+	$(document).ready(function() {
+		var row_slider = $(".row_slider"),
+			slider_list = row_slider.find(".slider_list"),
+			slider_tab = row_slider.find(".slider_tab i"),
+			btn = row_slider.find(".btn"),
+			btn_left = row_slider.find(".btn-left"),
+			btn_right = row_slider.find(".btn-right"),
+			oneWidth = slider_list.find("li").eq(0).width();
+		//slider_list.width(oneWidth*slider_list.find("li").length);
+
+		var timer = null;
+		var index = 0;
+		var qind=0;
+
+		slider_tab.on("click",function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			index = $(this).index();
+		})
+
+		Set=setInterval(goSlider,tiem);
+		function goSlider(e){
+			timer = setInterval(function(){
+				index++;
+				if(index>slider_tab.length-1){
+					index=0;
+				}
+
+				//slider_tab.eq(index).trigger("click");
+			},2000)
+		}
+
+		// row_slider.hover(function(){
+		// 	clearInterval(timer);
+		// 	btn_left.css("left","0");
+		// 	btn_right.css("right","0");
+		// },function(){
+		// 	goSlider();
+		// 	btn_left.css("left","-30px");
+		// 	btn_right.css("right","-30px");
+		// });
+
+
+		// slider_tab.on("click",function(){
+		// 	$(this).addClass('active').siblings().removeClass('active');
+		// 	index = $(this).index();
+		// 	slider_list.animate({
+		// 		"left":-oneWidth*index,
+		// 	},500)
+		// })
+
+		// btn.on("click",function(e){
+		// 	clearInterval(timer);
+		// 	if($(this).context.classList[1]=="btn-left"){
+		// 		index--;
+		// 		if(index>slider_tab.length-1){
+		// 			index=0;
+		// 		}
+		// 		slider_tab.eq(index).trigger("click");
+		// 	}else{
+		// 		index++;
+		// 		if(index>slider_tab.length-1){
+		// 			index=0;
+		// 		}
+		// 		slider_tab.eq(index).trigger("click");
+		// 	}
+		// })
+
+		// function goSlider(argument) {
+		// 	timer = setInterval(function(){
+		// 		index++;
+		// 		if(index>slider_tab.length-1){
+		// 			index=0;
+		// 		}
+		// 		slider_tab.eq(index).trigger("click");
+		// 	},2000)
+		// }
+
+		// goSlider();
+
+		// row_slider.hover(function(){
+		// 	clearInterval(timer);
+		// 	btn_left.css("left","0");
+		// 	btn_right.css("right","0");
+		// },function(){
+		// 	goSlider();
+		// 	btn_left.css("left","-30px");
+		// 	btn_right.css("right","-30px");
+		// });
+
+	})
+</script> -->
+</html>
