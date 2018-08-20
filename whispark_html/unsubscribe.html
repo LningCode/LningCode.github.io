@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Whispark项目说明</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+    h1,h2,h3,h4,p,html,body{margin: 0;padding: 0;}
+    .wk-docs-nav{background: #ff855c;}
+    .wk-docs-nav img{display: block;}
+    .wk-container{width: 1170px;margin: 0 auto;min-width: 320px;}
+    .uns-main{min-width: 320px;text-align: center;min-height: 490px;}
+    .uns-footbar{min-width: 320px;text-align: center;background-color: #eee;border-top: 1px solid #ccc;position: fixed;bottom: 0;left: 0;right: 0;padding: 20px 15px;
+    box-sizing: border-box;}
+    .uns-main h3{padding: 80px 15px 0;font-size: 22px;color: #333;line-height: 22px;}
+    .uns-main p{padding: 80px 15px 0;font-size: 20px;color: #333;line-height: 20px;}
+    .uns-main .btn{display: inline-block;padding: 8px 45px;font-size: 18px;color: #fff;background: #3983f2;margin-top: 40px;border: none;border-radius: 20px;text-decoration: none;}
+    .uns-footbar h1{font-size: 30px;line-height: 36px;color: #7a7a7a;padding-bottom: 8px;}
+    .uns-footbar p{line-height: 14px;color: #7a7a7a;font-size: 12px;text-align: center;}
+    .uns-footbar p:last-child{padding-top: 10px;}
+    .dir-section{
+        display:none;
+        position: fixed;top: 225px;border-radius: 5px;
+        left: 50%;z-index: 5;width: 620px;height: 105px;
+        font-size: 20px;color: #333;margin-left: -325px;
+        background: #fff;text-align: center;
+        padding: 100px 15px 15px;box-shadow: 0 0 4px 1px #eee;
+    }
+    .dir-section .close{position: absolute;top: 10px;right: 10px;display: block;width: 24px;height: 24px;color: #b4b4b4;font-size: 26px;line-height: 23px;cursor: pointer;}
+    @media (max-width: 1200px){
+        .wk-container{
+            width: 1000px;
+        }
+    }
+    @media (max-width: 1000px){
+        .wk-container{
+            width: 100%;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+    }
+    @media (max-width: 700px){
+        .dir-section{
+            left: 20px;
+            margin-left: 0;
+            right: 20px;
+            width: initial;
+            top: 165px;
+        }
+    }
+    @media (max-width: 500px){
+        .uns-main h3{
+            padding: 70px 15px 0;
+        }
+        .uns-main p{
+            padding: 70px 15px 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <header class="navbar navbar-static-top wk-docs-nav">
+        <div class="wk-container">
+            <a href="index.html" class="navbar-header"><img src="./assets/common/img/playssion-logo.png" alt=""></a>
+        </div>
+    </header>
+    <div class="uns-main">
+        <h3>Unsubscribe</h3>
+        <P>I don't want to receive special notifications/service offers any more.</P>
+        <a onclick="openModel(true)" href="javascript:void(0);" class="btn">Unsubscribe</a>
+    </div>
+    <footer class="uns-footbar">
+        <h1>Whispark.com</h1>
+        <p>Copyright © 1998-2018, Whispark. All Rights Reserved. </p>
+        <p>Best view with tried-and-true versions of Google Chrome, Firefox.</p>
+    </footer>
+    <section class="dir-section">
+        <span class="close" onclick="openModel(false)">X</span>
+        You have successfully unsubscribed from the selected mailings!
+    </section>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    function openModel(type){
+        var dom = document.querySelector('.dir-section');
+        if(type){
+            dom.style.display = 'block';
+        }else{
+            dom.style.display = 'none';
+        }
+    }
+</script>
+</html>
