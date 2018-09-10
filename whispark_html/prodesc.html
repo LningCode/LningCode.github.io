@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Whispark项目说明</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    h1,h2,h3,h4,p{margin: 0}
+    ::-webkit-scrollbar{   
+        width: 10px;   
+        height: 10px;   
+        background: noen;
+    }
+    ::-webkit-scrollbar-thumb{   
+        border-radius: 10px;   
+        -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);   
+        background: #999;   
+    }
+    .wk-docs-nav{background: #ff6633cc;position: fixed;top: 0;right: 0;left: 0;z-index: 9;margin-bottom: 0}
+    .wk-container{padding: 0 50px;}
+    .wk-docs-container{position: relative;margin-top: 90px;}
+    .nav .glyphicon-menu-right{position: absolute;top: 13px;right: 13px;}
+    .nav .badge{float: right;margin-right: 20px;}
+    .nav .mune-title{color: #333;font-size: 16px;font-weight: 500;}
+    .mune-example{margin-left: 30px;display: none;}
+    .mune-example li a{padding: 6px 10px;color: #6e6e6e}
+    .col-pull-left{position: fixed;top: 70px;left: 0;width: 350px;bottom: 0;overflow-y: scroll;padding-top: 20px;z-index: 5;}
+    .col-pull-right{position: fixed;top: 70px;left: 370px;bottom: 0;overflow-y: scroll;padding-top: 20px;z-index: 5;right: 30px;}
+    .panel-title{padding-bottom: 12px;}
+    .panel-lftpad{margin-left: 30px}
+    .pre-language .language-html{padding: 5px 10px;display: inline-block;margin-top: 8px}
+    .panel-body pre{
+        font-size: 15px;
+    }
+</style>
+</head>
+<body>
+    <header class="navbar navbar-static-top wk-docs-nav">
+        <div class="wk-container">
+            <div class="navbar-header"><img src="./assets/common/img/playssion-logo.png" alt=""></div>
+        </div>
+    </header>
+    <div class="col-pull-left">
+        <ul class="nav nav-pills nav-stacked nav-example">
+            <li class="example-li"><a href="#proExplain" class="mune-title">项目说明</a></li>
+            <li class="example-li">
+                <a href="#commandUses" class="mune-title">基本使用实例</a>
+                <!-- <a href="#" class="mune-title">基本使用实例<span class="badge">42</span><span class="glyphicon glyphicon-menu-right"></span></a> -->
+                <!-- <ul class="nav nav-pills nav-stacked mune-example">
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                </ul> -->
+            </li>
+            <!-- <li class="example-li">
+                <a href="#" class="mune-title">core (核心模块)<span class="glyphicon glyphicon-menu-right"></span></a>
+                <ul class="nav nav-pills nav-stacked mune-example">
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                </ul>
+            </li>
+            <li class="example-li">
+                <a href="#" class="mune-title">shared (共享模块)<span class="glyphicon glyphicon-menu-right"></span></a>
+                <ul class="nav nav-pills nav-stacked mune-example">
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                </ul>
+            </li>
+            <li class="example-li">
+                <a href="#" class="mune-title">Utils (工具类)<span class="glyphicon glyphicon-menu-right"></span></a>
+                <ul class="nav nav-pills nav-stacked mune-example">
+                    <li><a href="#">闪电风暴部分代表</a></li>
+                </ul>
+            </li> -->
+            <li class="example-li">
+                <a href="#commandUse" class="mune-title">基本使用命令</a>
+            </li>
+            <li class="example-li">
+                <a href="#thirdLibrary" class="mune-title">第三方库使用</a>
+            </li>
+            <li class="example-li">
+                <a href="#proUrl" class="mune-title">项目地址</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wk-docs-container">
+        <div class="col-pull-right">
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="proExplain" class="panel-title">项目说明</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h4 class="panel-title">使用要求</h4>
+                        <p>1. 引用第三方类库要和组内同事或者项目管理者建议是否使用，避免过多使用造成项目资源过大，后面同事使用不清楚等问题。</p>
+                        <p>2. 引用需要对应添加使用方法和被使用的功能模块。</p>
+                        <h4 style="padding-top: 10px;" class="panel-title">项目目录</h4>
+<pre>
+<code>.
+    ├── Whispark-Chat
+    ├── README.md                              // 发布安装说明,项目的基础文档，预先写入了 CLI 命令的信息
+    ├── e2e                                    // 测试
+    ├── node_modules                           // 包依赖
+    ├── src                                    // 项目主目录
+    │&nbsp;&nbsp; ├── index.html                         // 组件主入口
+    │&nbsp;&nbsp; ├── app                                // 所有组件目录
+    │&nbsp;&nbsp; │&nbsp;&nbsp; ├── app.component.ts
+    │&nbsp;&nbsp; │&nbsp;&nbsp; ├── app.component.html
+    │&nbsp;&nbsp; │&nbsp;&nbsp; ├── app.module.ts
+    │&nbsp;&nbsp; │&nbsp;&nbsp; ├── app.component.css
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── app.component.spec.ts          // 单元测试
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── chat                           // 聊天界面组件
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat-footer                // 底部输入栏
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat-menu                  // 左边女用户列表
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── shared                     
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat.component.css         
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat.component.html        
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat.component.ts          
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── chat.module.html
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── common                         // 公共方法
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── storage                    // 本地存储服务
+    │&nbsp;&nbsp; │&nbsp;&nbsp;         └── local-storage-key.ts   // 本地存储名称
+    │&nbsp;&nbsp; │&nbsp;&nbsp;         └── local-storage-service.ts   // 本地存储封装
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── config-info.ts             // 全部接口api地址
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── service                        // 公共服务类
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── 
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── service-base.service.ts    // http封装
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── 
+    │&nbsp;&nbsp; ├── assets                             // 静态资源
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── chat
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── msg-list.json                 
+    │&nbsp;&nbsp; │&nbsp;&nbsp; └── common
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── js
+    │&nbsp;&nbsp; │&nbsp;&nbsp;     └── img
+    ├── angular.json                           // CLI配置文件
+    ├── package.json                           // npm包依赖配置文件
+    ├── tsconfig.json                          // TS 编译器的配置文件 tsconfig.spec.json 是单元测试
+    └── tslint.json                            // 额外的 Linting 配置, 风格规范
+    </code>
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="commandUses" class="panel-title">基本使用实例</h2>
+                    </div>
+                    <div class="panel-body">
+<pre>
+    <code>
+    // http请求 get或post
+    // 传两个参数， 1. api地址，2.参数格式+ 
+    this.server.getData(this.api.json.addChat, {memberId: id})
+    .then(res => {
+        res     // 统一返回错误和成功状态
+    });
+
+    // 本地缓存
+    this.ls.setObj();  // 存字符串对象  参数：1.传读取名称  2.data（数据）
+    this.ls.set();     // 存字符串      参数：1.传读取名称  2.data（数据）
+    this.ls.getObj();  // 取字符串对象  参数：传读取名称
+    this.ls.get();     // 取字符串      参数：传读取名称
+    </code>
+</pre>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="commandUse" class="panel-title">core (核心模块)</h2>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="commandUse" class="panel-title">shared (共享模块)</h2>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div> -->
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="commandUse" class="panel-title">角命令大全</h2>
+                    </div>
+                    <div class="panel-body">
+                        <p>ng new project &nbsp;&nbsp;&nbsp;&nbsp;新建项目</p>
+                        <p>npm install &nbsp;&nbsp;&nbsp;&nbsp;安装项目需要的包</p>
+                        <p>ng serve&nbsp;&nbsp;&nbsp;&nbsp;启动项目</p>
+                        <p>ng g c User &nbsp;&nbsp;&nbsp;&nbsp;参加组件（user组件名）</p>
+                        <p>ng serve --prod --aot &nbsp;&nbsp;&nbsp;&nbsp;最小化打包启动</p>
+                        <p>ng build --prod --aot &nbsp;&nbsp;&nbsp;&nbsp;编译打包</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="thirdLibrary" class="panel-title">第三方库使用</h2>
+                    </div>
+                    <div class="panel-body">
+                        ngx-bootstrap  &nbsp;&nbsp;&nbsp;&nbsp;http://ngx-bootstrap.com/#/
+                    </div>
+                </div>
+            </div>
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 id="proUrl" class="panel-title">项目地址</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h4 class="panel-title">测试环境</h4>
+                        <p class="panel-lftpad">国际项目（front）</p>
+                        <div class="pre-language panel-lftpad">
+                            <code class="language-html">
+                                <span>https://test.whispark.com</span>
+                            </code>
+                        </div>
+                        <p class="panel-lftpad">发布商（front）</p>
+                        <div class="pre-language panel-lftpad">
+                            <code class="language-html">
+                                <span>https://agencym.test.whispark.com</span>
+                            </code>
+                        </div>
+                        <p class="panel-lftpad">后台管理系统（front）</p>
+                        <div class="pre-language panel-lftpad">
+                            <code class="language-html">
+                                <span>http://host.wptest.com/login</span>
+                            </code>
+                        </div>
+                        <p class="panel-lftpad">接口文档</p>
+                        <div class="pre-language panel-lftpad">
+                            <code class="language-html">
+                                <span>http://192.168.0.129:8085/showdoc-master/web/#/1?page_id=99</span>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(".nav-example .example-li").on('click', function(){
+        $(this).find('.mune-example').stop(true).slideToggle();
+    });
+    $(".mune-example").on('click',function(e){
+        e.stopPropagation();
+    });
+</script>
+</html>
