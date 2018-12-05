@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <base href="/"> -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>whispark</title>
+	<!-- <link rel="stylesheet" href="http://host.wptest.com/static/css/bootstrap/css/bootstrap.min.css?v=1529470260518"> -->
+	<style>
+		.festival-mian{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.festival-mian .mian-bg{
+			background: #000;
+			opacity: .5;
+			width: 100%;
+			height: 100%;
+		}
+		.festival-mian .centent{
+			position: absolute;
+			min-width: 320px;
+			overflow: hidden;
+			top: 50%;
+			left: 50%;
+			margin: -450px 0 0 -523px;
+			width: 1046px;
+			height: 900px;
+			background: url('./sdj_cd.png') no-repeat center top;
+		}
+		.festival-mian .centent-box{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.festival-mian .figure{
+			position: absolute;
+			bottom: 150px;
+			left: 50%;
+			width: 436px;
+			height: 459px;
+			margin-left: -218px;
+			background: url('./bd.png') no-repeat center bottom;
+			background-size: 259px 287px;
+		}
+		.festival-mian .figure-block{
+			position: relative;
+			width: 100%;
+    		height: 100%;
+		}
+		.festival-mian .fig-col:nth-child(1){
+			position: absolute;
+			top: 77px;
+		    left: 10px;
+			width: 158px;
+			height: 142px;
+			background: url('./zuo.png') no-repeat center center;
+			transform: rotate(0deg);
+    		transform-origin: 100% 100%;
+    		animation: figureLeft 1s;
+			-moz-animation: figureLeft 1s; /* Firefox */
+			-webkit-animation: figureLeft 1s; /* Safari and Chrome */
+			-o-animation: figureLeft 1s; /* Opera */
+		}
+		.festival-mian .fig-col:nth-child(2){
+			position: absolute;
+			top: 0px;
+		    left: 50%;
+		    margin-left: -78px;
+			width: 170px;
+			height: 244px;
+			background: url('./hd.png') no-repeat center center;
+			z-index: 3;
+		}
+		.festival-mian .fig-col:nth-child(3){
+			position: absolute;
+			top: 77px;
+		    right: 0;
+			width: 155px;
+			height: 159px;
+			background: url('./you.png') no-repeat center center;
+			transform: rotate(0deg);
+    		transform-origin: 0px 100px;
+    		animation: figureRight 1s;
+			-moz-animation: figureRight 1s; /* Firefox */
+			-webkit-animation: figureRight 1s; /* Safari and Chrome */
+			-o-animation: figureRight 1s; /* Opera */
+		}
+		.festival-mian .draw-werp{
+			position: absolute;
+			bottom: -445px;
+			left: 50%;
+			width: 730px;
+			height: 439px;
+			background: url('./drawbg.png') no-repeat center bottom;
+			z-index: 5;
+			padding-left: 75px;
+			margin-left: -335px;
+    		box-sizing: border-box;
+    		animation: draw 1s;
+			-moz-animation: draw 1s; /* Firefox */
+			-webkit-animation: draw 1s; /* Safari and Chrome */
+			-o-animation: draw 1s; /* Opera */
+			animation-delay: 4s;
+			-webkit-animation-delay: 4s; /* Safari 和 Chrome */
+			animation-fill-mode:forwards;
+		}
+		.festival-mian .draw-werp::after{
+			display: block;
+			content: '';
+			clear: both;
+		}
+		.festival-mian .draw-col{
+			float: left;
+			margin-left: 70px;
+			margin-top: 160px;
+			cursor: pointer;
+			height: 130px;
+			position: relative;
+		}
+		.festival-mian .draw-col:nth-child(1){
+			width: 70px;
+			background: url('./sdj_tg.png') no-repeat center center;
+			background-size: 70px 112px;
+		}
+		.festival-mian .draw-col:nth-child(2){
+			width: 123px;
+			background: url('./sdj_lwh.png') no-repeat center center;
+			background-size: 123px 102px;
+		}
+		.festival-mian .draw-col:nth-child(3){
+			width: 77px;
+			background: url('./sdj_wz.png') no-repeat center center;
+			background-size: 77px 130px;
+		}
+		.festival-mian .colse-btn{
+			position: absolute;
+			top: -50px;
+			right: 0;
+			display: block;
+			width: 46px;
+			height: 46px;
+			cursor: pointer;
+			background: url('./gej_buttun.png') no-repeat center center;
+			animation: colse 1s;
+			-moz-animation: colse 1s; /* Firefox */
+			-webkit-animation: colse 1s; /* Safari and Chrome */
+			-o-animation: colse 1s; /* Opera */
+			animation-delay: 4s;
+			-webkit-animation-delay: 4s; /* Safari 和 Chrome */
+			animation-fill-mode:forwards;
+		}
+		.festival-mian .col-gift{
+			position: absolute;
+		}
+		.festival-mian .col-gift:nth-child(1){
+			top: -200px;
+		    left: 50%;
+			width: 83px;
+			height: 82px;
+			background: url('./gift/sdj_tg.png') no-repeat center center;
+			animation: firstA 5s;
+			-moz-animation: firstA 5s; /* Firefox */
+			-webkit-animation: firstA 5s; /* Safari and Chrome */
+			-o-animation: firstA 5s; /* Opera */
+			z-index: 5;
+		}
+		.festival-mian .col-gift:nth-child(2){
+			top: -200px;
+		    left: 50%;
+		    width: 80px;
+		    height: 62px;
+			background: url('./gift/sdj_bt.png') no-repeat center center;
+			animation: firstB 5s;
+			-moz-animation: firstB 5s; /* Firefox */
+			-webkit-animation: firstB 5s; /* Safari and Chrome */
+			-o-animation: firstB 5s; /* Opera */
+		}
+		.festival-mian .col-gift:nth-child(3){
+			top: -200px;
+    		left: 50%;
+			width: 93px;
+			height: 78px;
+			background: url('./gift/sdj_lwm.png') no-repeat center center;
+			animation: firstC 5s;
+			-moz-animation: firstC 5s; /* Firefox */
+			-webkit-animation: firstC 5s; /* Safari and Chrome */
+			-o-animation: firstC 5s; /* Opera */
+			z-index: 4;
+		}
+		.festival-mian .col-gift:nth-child(4){
+			top: -200px;
+		    left: 50%;
+			width: 46px;
+			height: 66px;
+			background: url('./gift/sdj_bg.png') no-repeat center center;
+			animation: firstD 5s;
+			-moz-animation: firstD 5s; /* Firefox */
+			-webkit-animation: firstD 5s; /* Safari and Chrome */
+			-o-animation: firstD 5s; /* Opera */
+		}
+		.festival-mian .col-gift:nth-child(5){
+			top: -200px;
+    		right: 50%;
+			width: 101px;
+			height: 84px;
+			background: url('./gift/sdj_tangguo.png') no-repeat center center;
+			animation: firstE 5s;
+			-moz-animation: firstE 5s; /* Firefox */
+			-webkit-animation: firstE 5s; /* Safari and Chrome */
+			-o-animation: firstE 5s; /* Opera */
+			z-index: 4;
+		}
+		.festival-mian .col-gift:nth-child(6){
+			bottom: -200px;
+    		left: 50%;
+			width: 83px;
+			height: 82px;
+			background: url('./gift/sdj_tangg.png') no-repeat center center;
+			animation: firstF 5s;
+			-moz-animation: firstF 5s; /* Firefox */
+			-webkit-animation: firstF 5s; /* Safari and Chrome */
+			-o-animation: firstF 5s; /* Opera */
+			z-index: 6;
+		}
+		.festival-mian .col-gift:nth-child(7){
+			bottom: -200px;
+    		left: 50%;
+			width: 98px;
+			height: 94px;
+			background: url('./gift/sdj_lwh.png') no-repeat center center;
+			animation: firstG 4s;
+			-moz-animation: firstG 4s; /* Firefox */
+			-webkit-animation: firstG 4s; /* Safari and Chrome */
+			-o-animation: firstG 4s; /* Opera */
+			z-index: 7;
+		}
+		.festival-mian .col-gift:nth-child(8){
+			left: 50%;
+    		bottom: -200px;
+			width: 74px;
+			height: 79px;
+			background: url('./gift/sdj_lngdang.png') no-repeat center center;
+			animation: firstH 5s;
+			-moz-animation: firstH 5s; /* Firefox */
+			-webkit-animation: firstH 5s; /* Safari and Chrome */
+			-o-animation: firstH 5s; /* Opera */
+		}
+		.festival-mian .col-gift:nth-child(9){
+			right: 50%;
+    		bottom: -200px;
+			width: 117px;
+			height: 80px;
+			background: url('./gift/sdj_maozi.png') no-repeat center center;
+			animation: firstI 5s;
+			-moz-animation: firstI 5s; /* Firefox */
+			-webkit-animation: firstI 5s; /* Safari and Chrome */
+			-o-animation: firstI 5s; /* Opera */
+		}
+		.festival-mian .col-gift:nth-child(10){
+			bottom: -200px;
+    		left: 50%;
+			width: 101px;
+			height: 91px;
+			background: url('./gift/sdj_hz.png') no-repeat center center;
+			animation: firstJ 5s;
+			-moz-animation: firstJ 5s; /* Firefox */
+			-webkit-animation: firstJ 5s; /* Safari and Chrome */
+			-o-animation: firstJ 5s; /* Opera */
+		}
+		.festival-mian .col-gift:nth-child(11){
+			bottom: -200px;
+    		right: 50%;
+			width: 68px;
+			height: 72px;
+			background: url('./gift/sdj_ln.png') no-repeat center center;
+			animation: firstK 5s;
+			-moz-animation: firstK 5s; /* Firefox */
+			-webkit-animation: firstK 5s; /* Safari and Chrome */
+			-o-animation: firstK 5s; /* Opera */
+		}
+		@keyframes draw{
+			from {bottom: -445px;}
+			to {bottom: 0px;}
+		}
+		@keyframes colse{
+			from {top: -50px;}
+			to {top: 0px;}
+		}
+		@keyframes figureLeft{
+			0%{transform: rotate(-35deg);}
+			100%{transform: rotate(0deg);}
+		}
+		@keyframes figureRight{
+			0%{transform: rotate(50deg);}
+			100%{transform: rotate(0deg);}
+		}
+		@keyframes firstA{
+			0%   {top: 440px;}
+			30%   {top: 148px;transform: rotate(0deg);}
+			100% {top: 1000px;transform: rotate(360deg);}
+		}
+		@keyframes firstB{
+			0%   {top: 475px;margin-left: -125px;}
+			30%   {top: 245px;margin-left: -300px;transform: rotate(0deg);}
+			100% {top: 1000px;margin-left: -300px;transform: rotate(360deg);}
+		}
+		@keyframes firstC{
+			0%   {top: 410px;margin-left: -120px;}
+			30%   {top: 225px;margin-left: -180px;transform: rotate(0deg);}
+			100% {top: 1000px;margin-left: -180px;transform: rotate(360deg);}
+		}
+		@keyframes firstD{
+			0%   {top: 400px;}
+			30%   {top: 200px;margin-left: 75px;transform: rotate(0deg);}
+			100% {top: 1000px;margin-left: 75px;transform: rotate(360deg);}
+		}
+		@keyframes firstE{
+			0%   {top: 450px;margin-right: -120px;}
+			30%   {top: 245px;margin-right: -305px;transform: rotate(0deg);}
+			100% {top: 1000px;margin-right: -305px;transform: rotate(360deg);}
+		}
+		@keyframes firstF{
+			0%   {bottom: 175px;margin-left: -95px;}
+			30%   {bottom: 240px;margin-left: -400px;transform: rotate(0deg);}
+			100% {bottom: -500px;margin-left: -400px;transform: rotate(360deg);}
+		}
+		@keyframes firstG{
+			0%   {bottom: 210px;}
+			30%   {bottom: 310px;transform: rotate(0deg);}
+			100% {bottom: -500px;transform: rotate(360deg);}
+		}
+		@keyframes firstH{
+			0%   {bottom: 140px;margin-left: -115px;}
+			0%   {bottom: 100px;margin-left: -315px;transform: rotate(0deg);}
+			100% {bottom: -500px;margin-left: -315px;transform: rotate(360deg);}
+		}
+		@keyframes firstI{
+			0%   {bottom: 215px;margin-right: -230px;}
+			30%  {bottom: 170px;margin-right: -390px;transform: rotate(0deg);}
+			100% {bottom: -500px;margin-right: -390px;transform: rotate(360deg);}
+		}
+		@keyframes firstJ{
+			0%   {bottom: 130px;margin-left: -55px;}
+			30%   {bottom: 25px;margin-left: -175px;transform: rotate(0deg);}
+			100% {bottom: -500px;margin-left: -175px;transform: rotate(360deg);}
+		}
+		@keyframes firstK{
+			0%   {bottom: 160px;margin-right: -105px;}
+			30%   {bottom: 55px;;margin-right: -210px;transform: rotate(0deg);}
+			100% {bottom: -500px;margin-right: -210px;transform: rotate(360deg);}
+		}
+		@media screen and (max-width: 1050px){
+			.festival-mian .centent{
+				width: 100%;
+				margin: -450px 0 0 -50%;
+			}
+			.festival-mian .colse-btn{
+				right: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="festival-mian">
+		<div class="mian-bg"></div>
+		<div class="centent">
+			<div class="centent-box">
+				<span class="colse-btn"></span>
+				<div class="figure">
+					<div class="figure-block">
+						<div class="fig-col"></div>
+						<div class="fig-col"></div>
+						<div class="fig-col"></div>
+					</div>
+				</div>
+				<div class="gift-list">
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+					<div class="col-gift"></div>
+				</div>
+				<div class="draw-werp">
+					<div class="draw-col"></div>
+					<div class="draw-col"></div>
+					<div class="draw-col"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+<script>
+
+
+</script>
+</html>
