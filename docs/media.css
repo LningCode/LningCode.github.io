@@ -1,0 +1,62 @@
+ul, ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+::root{
+	--nextColor:#919191;
+}
+.clearfix::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.pull-center{
+	text-align: center;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.bg{
+	background: #8A4182;
+}
+.clearbor{
+	border:none !important;
+}
+.pos-re{
+	position: relative;
+}
+.pos-ab{
+	position: absolute;
+}
+.pos-fix{
+	position: fixed;
+}
+.cols-70, .cols-66, .cols-60, .cols-30, .cols-25, .cols-16, .cols-8, .cols-6{
+	float: left;
+}
+.cols-70{
+	width: 70%;
+}
+.cols-66{
+	width: 66%;
+}
+.cols-60{
+	width: 60%;
+}
+.cols-30{
+	width: 30%;
+}
+.cols-25{
+	width: 25%;
+}
+.cols-16{
+	width: 16%;
+}
+.cols-8{
+	width: 8%;
+}
+.cols-6{width: 6%;}

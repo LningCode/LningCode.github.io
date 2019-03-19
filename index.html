@@ -1,243 +1,258 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>前端工程师-林福宁</title>
+    <title>前端工程化-QA测试</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/pure.css">
-    <link rel="stylesheet" href="css/grids-responsive.css">
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="./docs/main.css">
+    <link rel="stylesheet" href="./docs/style.css">
+    <link rel="stylesheet" href="./docs/media.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js"></script>
+    <style>
+        :root {
+            --customUnit: 100%;
+            --nextColor:#919191;
+        }
+        :root {
+            --centered: {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .doodle-box {
+            width: var(--customUnit);
+            height: var(--customUnit);
+            margin: 0;
+            background: #151946;
+            /* @apply --centered; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+        }
+    </style>
 </head>
-
-<body class="natee">
-    <div id="rainCanvas"></div>
-    <header class="header pure-g">
-        <div class="pure-u-1-2 header-left">
-            <h3><a href="https://github.com/LningCode">natee</a><a href="http://www.mnog.org/vueapp/" style="margin-left: 3em;">VueApp</a>
-            <a href="http://www.mnog.org/jod/" style="margin-left: 3em;">职业规划</a>
-            </h3>
-        </div>
-        <div class="pure-u-1-2 header-right">
-            <span class="menu-button icon-list4 toggle-contact"></span>
-        </div>
-    </header>
-    <div class="container pure-g">
-        <section class="pure-u-1 pure-u-md-1-2 introduce flex">
-            <div class="basic text-center">
-                <div class="basic-box">
-                    <h3 class="head text-shadow">对林福宁感兴趣？</h3>
-                    <p class="intro text-shadow">
-                        Now he is a Front-End engineer.
-                    </p>
-                    <p class="date">2016 - Now</p>
-                    <p>
-                        <a class="pure-button pure-button-primary shine-white toggle-contact" href="javascript:;">联系他</a>
-                    </p>
-                </div>
-            </div>
-            <div class="contact flex blind-effect bg-green-2">
-                <div class="inner">
-                    <h2 class="head text-center">联系方式</h2>
-                    <ul>
-                        <li>
-                            <p><span class="icon-mail6"> </span><i>1170096634@qq.com</i></p>
-                        </li>
-                        <li>
-                            <p><span class="icon-mobile"> </span><i>13925057575</i></p>
-                        </li>
-                        <li>
-                            <p><span class="icon-github"> </span><i>https://github.com/LningCode</i></p>
-                        </li>
-                        <li>
-                            <p><span class="icon-qrcode"> </span><i>微信号-13925057575</i></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="footer">
-                <nav class="ft-nav">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/webpack-china/awesome-webpack-cn" class="ft-nav-icon first">博客</a>
-                        </li>
-                        <li>
-                            <a href="http://www.qianduan.ink/site.html" class="ft-nav-icon second">前端</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/webpack-china/awesome-webpack-cn" class="ft-nav-icon third">GitBook</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="javascript:;" class="hide show-nav" id="showNav">
-                    <i class="icon-book"></i>
-                </a>
-                <a href="javascript:;" class="hide back toggle-contact" style="display: none;">
-                    <i class="icon-back"></i>
-                    <span class="">返回</span>
-                </a>
-            </footer>
-        </section>
-        <section class="pure-u-1 pure-u-md-1-2 main">
-            <div id="jSkill" class="skill">
-                <h2 class="head">职业技能</h2>
-                <h2 class="head" style="font-size:1.2em;margin:1em 0;padding-left: 1em">技能类</h2>
-                <div class="pure-g">
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/xcx.jpg" alt="Small"></div>
-                        <h3>微信小程序</h3>
-                        <p class="">小程序开发简单、高效的方式让开发者可以在微信中开发具有原生 APP 体验的服务。提供自己的视图层WXML 和 WXSS，以及基于 JavaScript 的逻辑层框架，可以让开发者可以方便的聚焦于数据与逻辑上。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="http://cordova.apache.org/static/img/cordova_bot.png" alt="cordova"></div>
-                        <h3>Cordova</h3>
-                        <p class="">移动应用程序与HTML，CSS和JS。使用一个代码库来定位多个平台</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="https://cn.vuejs.org/images/logo.png" alt="AngularJS"></div>
-                        <h3>Vue</h3>
-                        <p class="">前端框架，用起来还是比较愉快的，极大减轻了对数据方面的处理，库重水深。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-html.jpg" alt="HTML(5)"></div>
-                        <h3>HTML(5)</h3>
-                        <p class="">语义性，熟练手写符合w3c标准的HTML页面。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-css.jpg" alt="CSS(3)"></div>
-                        <h3>CSS(3)</h3>
-                        <p class="font-colorful">熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。<br> 这里有一个彩虹样式。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-js.jpg" alt="Javascript"></div>
-                        <h3>Javascript</h3>
-                        <p class="">你知道这个东西不简单，现在追求能够用优雅的代码实现功能。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-jquery.jpg" alt="jQuery"></div>
-                        <h3>jQuery</h3>
-                        <p class="">JS的一个类库，基本上可以熟练使用。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-bootstrap.jpg" alt="BootStrap"></div>
-                        <h3>BootStrap</h3>
-                        <p class="">很强大的一个前端框架，自适应布局，各种组件等。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-less.jpg" alt="Less"></div>
-                        <h3>Less/sass</h3>
-                        <p class="">把CSS赋予动态语言特性，可以写更少的代码达到效果。但是实际编译出来的代码量远远超过手写，所以我建议能不用就别用。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-nodejs.jpg" alt="NodeJS"></div>
-                        <h3>NodeJS/PhP/Mysql</h3>
-                        <p class="">以前拿来增删改查，现在用来自动化。php搭建msq是最初学习部分。现在主打前端方向</p>
-                    </div>
-                </div>
-                <h2 class="head" style="font-size:1.3em;margin:1em 0;padding-left: 1em">工具类</h2>
-                <div class="pure-g">
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-ps.jpg" alt="Phtoshop"></div>
-                        <h3>Phtoshop</h3>
-                        <p class="">熟练使用Photoshop，曾经做过几个网站的UI设计。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="img/icon-git.jpg" alt="Git"></div>
-                        <h3>Git/SVN</h3>
-                        <p class="">版本管理工具，最核心的区别Git是分布式的，而Svn不是分布的。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="https://www.webpackjs.com/cd0bb358c45b584743d8ce4991777c42.svg" alt="Gulp"></div>
-                        <h3>WebPack</h3>
-                        <p class="">前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。</p>
-                    </div>
-                    <div class="skill-item pure-u-1-2 pure-u-md-1-1">
-                        <div class="img"><img src="https://www.sublimetext.com/images/logo.svg" alt="Sublime Text"></div>
-                        <h3>Sublime Text</h3>
-                        <p class="">代码，标记和散文的复杂文本编辑器。您会喜欢流畅的用户界面，非凡的功能和惊人的性能。</p>
-                    </div>
-                </div>
-            </div>
-            <div id="jExp" class="experence">
-                <h2 class="head cf">项目经验</h2>
-                <div class="pure-g">
-                    <div class="pure-u-1-1">
-                        <ul class="p-list">
-                            <li class="list">
-                                <div class="head cf">
-                                    <span title="海致网络技术（北京）有限公司" class="icon-office"></span>
-                                    <span>双行线科技有限公司</span>
-                                    <span class="ft12">（2017-06&nbsp;至&nbsp;2018-03）</span>
-                                </div>
-                                <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>互联网电商，游戏代理，广告，大数据平台</div>
-                                        <div class="intro">
-                                            <p class="skill-tags"><span class="skill-tag">
-                                                vue
-                                                </span><span class="skill-tag">
-                                                NodeJS/php
-                                                </span><span class="skill-tag">
-                                                WebPack/svn/git
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>微信小程序</div>
-                                        <div class="intro">
-                                            <p>整个项目独立完成（还没发布），项目面试可提供演示。运用git做版本仓库管理工具</p>
-                                            <p>咚咚享 / 一秒</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>Cordova</div>
-                                        <div class="intro">
-                                            <p>游戏约玩平台,使用Cordova实现多端通行，及时通讯聊天等技术，运用git做版本仓库管理工具，本地运行PHP环境开发。</p>
-                                            <p class="skill-tags">
-                                                <span class="skill-tag">jQuery</span>
-                                                <span class="skill-tag">Cordova</span>
-                                                <span class="skill-tag">jq</span>
-                                                <span class="skill-tag">mui</span>
-                                                <span class="skill-tag">websocket.io</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
+<body>
+<div class="doodle-box">
+    <css-doodle>
+        :doodle {@grid: 1x10 / 61.8vmin;}
+        @place-cell:center;
+        @size:calc(@index()*10%);
+        border-radius: 50%;
+        border-width: calc(@index()*1vmin);
+        border-style: dashed;
+        border-color: hsla(calc( 20 * @index()), 70%, 68%, calc( 3 / @index() * .8));
+        --d: @rand(20s,40s);
+        --rf:@rand(360deg);
+        --rt:calc( var(--rf) + @pick(1turn,-1turn));
+        animation: spin var(--d) linear infinite;
+        @keyframes spin {
+        from{transform: rotate(var(--rf))}
+        to{transform: rotate(var(--rt))}
+        }
+    </css-doodle>
+</div>
+<div class="container">
+    <div class="fixedHeaderContainer">
+        <div class="headerWrapper wrapper">
+            <header>
+                <h2 class="headerTitleWithLogo">Qzy</h2>
+                <div class="navigationWrapper navigationSlider">
+                    <nav class="slidingNav">
+                        <ul class="nav-site nav-site-internal">
+                            <li class="">
+                                <a href="index.html" target="_self">介绍</a>
                             </li>
-                            <li class="list">
-                                <div class="head cf">
-                                    <span title="北京艾迪创想信息科技有限公司" class="icon-office"></span> 
-                                    <span>广州网讯网络科技有限公司</span>
-                                    <span class="ft12">（2016-01&nbsp;至&nbsp;2017-04）</span>
-                                </div>
-                                <ul class="list-content">
-                                    <li>
-                                        <div class="p-name"><span class="icon-text"></span>开吃吧</div>
-                                        <div class="p-name">项目预览：
-                                            <a target="_blank" class="link" href="https://www.wxw7z.com/">菜篮子</a>
-                                            <a target="_blank" class="link" href="https://www.wxw33.com/">土野良品</a>
-                                            <a target="_blank" class="link" href="http://www.wxeepp.com/">校园创客</a></div>
-                                        <div class="intro">
-                                            <p>社区O2O，农村电商、医疗健康、高校就业/创业。<br>自主创业项目，包括PC版、移动html5版，前端独立开发。</p>
-                                            <p>开发O2O,学生档案，资料管理后台和客户端。使用html+css编写系统的各个页面，利用js实现各个页面的动态效果，再用ajax实现与后台的对接显示到系统页面。其间主要应用jQuery/js/bootstrap及mui等框架，主要使用webstorm,sublime,Photoshop等开发工具，开发期间严格使用SVN版本管理工具，开发周期两个月左右，现已成功上线使用。</p>
-                                            <p>1、项目运行环境的部署（php+Apache+myspl）及公司内容管理平台，智能检索平台，单点登录平台的安装。<br>2、站群框架的搭建以及各站点需求的沟通确认。<br>3、各个站点的模板编写一数据交互工作。<br>4、与客户公司领导间的各种沟通协调致使项目顺利进展。<br>5、根据设计师给的设计图运用div+css完成页面布局。<br>6、与后端人员完成相应的接口定义、调用，将获取的数据渲染到页面。</p>
-                                            <p class="skill-tags">
-                                                <span class="skill-tag">jQuery/js</span>
-                                                <span class="skill-tag">Bootstrap/mui</span>
-                                                <span class="skill-tag">php/mysql</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <li class=""><a href="#" target="_self">项目</a></li>
+                            <li class=""><a href="docs/help.html" target="_self">帮助</a></li>
+                            <li class=""><a href="#" target="_self">博客</a></li>
+                            <li class=""><a href="https://github.com/LningCode" target="_self">GitHub</a></li>
+                            <li class="navSearchWrapper reactNavSearchWrapper">
+                                <span class="algolia-autocomplete">
+                                    <input type="text" id="search_input_react" placeholder="Search" title="Search" class="aa-input">
+                                </span>
                             </li>
                         </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="cover-backdrop"></div>
+        <div class="cover-info wrapper">
+            <div class="Grid-row clearfix">
+                <div class="grid-col cols-70">
+                    <div class="full-main pos-re">
+                        <span class="head pos-ab"><img src="./docs/wz.jpg" alt=""></span>
+                        <div class="full-info">
+                            <h1>Cody（前端热鸡）</h1>
+                            <p class="desc">努力奔跑，赶上拥挤的人潮！</p>
+                            <div class="meta-btn">
+                                <a href="#" class="btn">私信</a>
+                                <button class="btn bg">关注</button>
+                            </div>
+                            <div class="meta-info">
+                                <ul class="clearfix">
+                                    <li class="fl cols-25">
+                                        <div class="meta-block"><a href="#"><p>24</p>关注</a></div>
+                                    </li>
+                                    <li class="fl cols-25">
+                                        <div class="meta-block"><a href="#"><p>24</p>粉丝</a></div>
+                                    </li>
+                                    <li class="fl cols-25">
+                                        <div class="meta-block"><a href="#"><p>24</p>文章</a></div>
+                                    </li>
+                                    <li class="fl cols-25">
+                                        <div class="meta-block"><a href="#"><p>24</p>收获喜欢</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ember-view">
+                        <div class="topic-head">
+                            <ul class="ul clearfix">
+                                <li class="default cols-66">话题内容</li>
+                                <li class="posters cols-16 pull-center">最近来访</li>
+                                <li class="posts cols-6 pull-center">回答</li>
+                                <li class="views cols-6 pull-center">浏览</li>
+                                <li class="activity cols-6 pull-center">阅读数</li>
+                            </ul>
+                        </div>
+                        <div class="topic-list ember-view">
+                            <ul class="ul clearfix">
+                                <li class="list-item clearfix">
+                                    <div class="main-link pos-re cols-66 clearfix">
+                                        <div class="author-info">
+                                            <a href="./docs/details.html" class="is-vip" target="_blank">
+                                                <img class="avatar" src="./docs/wz.jpg">
+                                            </a>
+                                            <a class="name">Cody</a>
+                                            <a class="author">前端热鸡</a>
+                                            <a class="time">发布于：22 天前</a>
+                                        </div>
+                                        <div class="wrap-content pos-re">
+                                            <a class="title" href="./docs/details.html">前端工程化之路-自动化测试篇</a>
+                                            <p class="abstract">
+                                                原标题：开发规范和组件化开发面向的开发阶段，宗旨是提高团队协作能力，提高开发效率并降低维护成本。构建工具和平台解决了web产品一系列的工程问题，旨在提高web产品的性能表现，提高开发效率...
+                                            </p>
+                                            <div class="meta">
+                                                <span class="original">原创</span>
+                                                <span class="comments">收藏</span>   
+                                                <span class="like">点赞</span>
+                                            </div>
+                                            <a class="wrap-img pos-ab" href="#" target="_blank">
+                                                <img class="img-blur-done" src="./docs/img1.jpg" alt="120">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="posters cols-16 pull-center">
+                                        <img class="avatar" src="./docs/img1.jpg">
+                                        <img class="avatar" src="./docs/img1.jpg">
+                                        <img class="avatar" src="./docs/img1.jpg">
+                                        <img class="avatar" src="./docs/img1.jpg">
+                                        <img class="avatar" src="./docs/img1.jpg">
+                                    </div>
+                                    <div class="posts-map cols-6 pull-center">3</div>
+                                    <div class="posts-heat cols-6 pull-center">4</div>
+                                    <div class="posts-low cols-6 pull-center">5k</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-col cols-30">
+                    <div class="tag-section clearbor">
+                        <div class="link-base clearfix">
+                            <p class="fl">分享：</p>
+                            <a href="javascript:;" class="qq fl" title="分享到QQ好友"></a>
+                            <a href="javascript:;" class="weibo fl" title="分享到新浪微博"></a>
+                            <a href="javascript:;" class="weixin fl" title="分享到微信"></a>
+                        </div>
+                    </div>
+                    <div class="tag-section">
+                        <div class="tag-head">
+                            <div class="title"><span>热门标签</span></div>
+                            <div class="mork">
+                                <a href="#" target="_blank" class="tag-link">查看全部</a>
+                            </div>
+                        </div>
+                        <div class="tag-content">
+                            <div class="tag-list">
+                                <a href="#" target="_blank" class="tag">架构</a>
+                                <a href="#" target="_blank" class="tag">开源</a>
+                                <a href="#" target="_blank" class="tag">算法</a>
+                                <a href="#" target="_blank" class="tag">GitHub</a>
+                                <a href="#" target="_blank" class="tag">面试</a>
+                                <a href="#" target="_blank" class="tag">代码规范</a>
+                                <a href="#" target="_blank" class="tag">产品</a>
+                                <a href="#" target="_blank" class="tag">翻译计划</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag-section">
+                        <div class="tag-head">
+                            <div class="title"><span>热门话题</span></div>
+                            <div class="mork">
+                                <a href="#" target="_blank" class="tag-link">查看全部</a>
+                            </div>
+                        </div>
+                        <div class="tag-content">
+                            <div class="tag-list">
+                                <a href="#" target="_blank" class="tag">架构</a>
+                                <a href="#" target="_blank" class="tag">开源</a>
+                                <a href="#" target="_blank" class="tag">算法</a>
+                                <a href="#" target="_blank" class="tag">GitHub</a>
+                                <a href="#" target="_blank" class="tag">面试</a>
+                                <a href="#" target="_blank" class="tag">代码规范</a>
+                                <a href="#" target="_blank" class="tag">产品</a>
+                                <a href="#" target="_blank" class="tag">翻译计划</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/page_rainy.js"></script>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap">
+            <a href="/" class="nav-home">
+                <img src="https://jestjs.io/img/jest-outline.svg" alt="Jest" width="66" height="58">
+            </a>
+            <div>
+                <h5>Docs</h5>
+                <a href="#">Getting Started</a>
+                <a href="#">Guides</a>
+                <a href="#">API Reference</a>
+            </div>
+            <div>
+                <h5>Community</h5>
+                <a href="#" target="_blank">Stack Overflow</a>
+                <a href="#">Jest Chat</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+            <div>
+                <h5>More</h5>
+                <a href="/blog">Blog</a>
+                <a href="#">GitHub</a><span></span>
+            </div>
+        </section>
+        <section class="copyright">Copyright © 2018 Facebook Inc.</section>
+    </footer>
+</div>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
 </body>
+<script>
+    setTimeout(function() {
+        $(".doodle-box").fadeOut();
+    }, 2000);
+</script>
 </html>

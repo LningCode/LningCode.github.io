@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>前端工程化-QA测试</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .desc{padding: 0 40px;color: #999}
+        .desc p{margin-bottom: 7px;}
+        .desc-p{padding-left: 23px;}
+        .prc-clear{display: inline-block;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="fixedHeaderContainer">
+        <div class="headerWrapper wrapper">
+            <header>
+                <h2 class="headerTitleWithLogo">Qzy</h2>
+                <div class="navigationWrapper navigationSlider">
+                    <nav class="slidingNav">
+                        <ul class="nav-site nav-site-internal">
+                            <li class="">
+                                <a href="../index.html" target="_self">介绍</a>
+                            </li>
+                            <li class=""><a href="#" target="_self">项目</a></li>
+                            <li class=""><a href="help.html" target="_self">帮助</a></li>
+                            <li class=""><a href="#" target="_self">博客</a></li>
+                            <li class=""><a href="https://github.com/LningCode" target="_self">GitHub</a></li>
+                            <li class="navSearchWrapper reactNavSearchWrapper">
+                                <span class="algolia-autocomplete">
+                                    <input type="text" id="search_input_react" placeholder="Search" title="Search" class="aa-input">
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="note-article wrapper">
+            <h1 class="title">前端工程化之路-自动化测试篇</h1>
+            <div class="note-author">
+                <a href="/" class="avatar"><img src="" alt=""></a>
+            </div>
+            <p>
+            开发规范和组件化开发面向的开发阶段，宗旨是提高团队协作能力，提高开发效率并降低维护成本。
+            构建工具和平台解决了web产品一系列的工程问题，旨在提高web产品的性能表现，提高开发效率。
+            随着Node.js的流行，对于前端的定义越来越宽泛，在整个web开发体系中。前端工程师的角色越来越重要。本文论述的前端工程体系没有涉及Node.js这一层面，当一个团队步入大前端时代，前端的定义已经不仅仅是“前端”了，我想Web工程师这个称号更合适一些。</p>
+            <h4>一，单元测试</h4>
+            <div class="desc">
+                <p>1、单元测试目的：对一小块的功能测试，例如一个函数，公共工具包等测试</p>
+                <p class="desc-p">工具介绍:断言库 比如，或者，大于，小于，是不是等语言表达</p>
+                <p>2、步骤</p>
+                <p class="desc-p">karma配置文件 #karma init</p>
+                <p class="desc-p">在根目录下编写测试文件: unit/index.js && index.spec.js</p>
+                <p>
+                <pre class="prc-clear">
+                // karma.conf.js
+                files: [
+                    "./unit/**/*.js",
+                    "./unit/**/*.spec.js",
+                ]
+                </pre>
+                <pre class="prc-clear">
+                // index.js
+                window.test = function(a){
+                    return a + 1;
+                }
+                </pre>
+                <pre class="prc-clear">
+                // index.spec.js
+                describe("测试基本的API",function(){
+                    it("+1函数执行结果",function(){
+                        expect(window.test(1)).toBe(2);
+                    })
+                })
+                </pre>
+                </p>
+                <p class="desc-p">karma start</p>
+            </div>
+            <h4>二，e2e测试 (页面测试)</h4>
+            <div class="desc">
+                <p>1，安装 selenium-webdriver #npm install selenium-webdriver</p>
+                <p>2，测试对应页面：以百度为测试演示</p>
+                <p>3，下载对应的浏览器驱动，这里使用火狐浏览器演示https://www.npmjs.com/package/selenium-webdriver,</p>
+            </div>
+            <h4>三，UI测试</h4>
+            <div class="desc">
+                <p>1、npm install phantomcss</p>
+                <p>2，npm install -g backstopjs</p>
+                <p>3，backstopj init</p>
+            </div>
+            <h4>四，接口测试</h4>
+            <div class="desc">
+                <p>1，新建node接口服务</p>
+                <p>2，npm install express npm install axios npm install mocha npm install --save-dev mochawesome</p>
+                <p>https://note.youdao.com/share/?id=b0f4bb26788d23f2bc04f5a7db77fa8a&type=note#/</p>
+            </div>
+
+            <h1 class="title">大规模NodeJS项目架构</h1>
+            <h4>一，为什么使用nodeJS</h4>
+            <div class="desc">
+                <p>1，node削减api</p>
+                <p>2，node 做ssr（服务端渲染）</p>
+                <p>3，node更好的做前后端分离，可独立上线</p>
+                <p>4，异步，吞吐量大（聊天）</p>
+            </div>
+            <h4>二，前端发布几种形式</h4>
+            <div class="desc">
+                <p>1，vue-cli/ng 打包成文件到dist目录下面发布<br>
+                    问题：跨域，中间需要ngirx</p>
+                <p>2，模版(swig)+node<br>
+                    利用node访问后端API</p>
+                <p>3，同构化 前后共用一套模版</p>
+                <p>4，去模板 前端框架+node<br>
+                node修改http请求爆头代替前端假路由</p>
+                <p>http://note.youdao.com/noteshare?id=37ca53bde36c8b62ca0c2f6460a24ac</p>
+            </div>
+
+            <h1 class="title">技术大牛推荐值得关注的开发者博客</h1>
+            <div class="desc">
+                <h4>1.The Netflix Tech Blog</h4>
+                <p>如果你还没有听说过 Netflix，恐怕就有点“与世隔绝”了。近年来。在线流媒体平台可谓发展迅猛。
+                    自 1997 年上线以来，Netflix 在全球已拥有近 1.18 亿流媒体用户。它也成为了当地的科技巨头之一，吸引了众多优秀的开发者为其工作。
+                    为了便于大家更深入的了解，他们在 Medium 上开通了 Netflix 技术博客。你可以了解 Netflix 是如何设计、构建、运营其系统和工程组织的相关信息。</p>
+                <p>地址：http://techblog.netflix.com/<br>
+                    利用node访问后端API</p>
+                <h4>2.Code as Craft</h4>
+                <p>如果你居住在美国，你应该会经常在 Etsy 购物。这是一个以手工艺成品买卖为特色的网络购物网站。
+                与 Netflix 技术博客相似，Etsy 的工程师也在名为“ Code as craft ”的技术博客上，分享他们的成果和经验。</p>
+                <p>地址：https://codeascraft.com/</p>
+                <h4>3.Phpied</h4>
+                <p>如果你想学习更多的 JS 技巧，那一定要勤逛 Phpied 博客。它是由
+                Stoyan Stefanov 运营的。博客的作者 Stoyan Stefanov 是 Facebook 的工程师、前雅虎、YSlow 2.0 性能工具的架构师，同时也是 smush.it 图像优化工具的开发者。</p>
+                <p>地址：http://www.phpied.com</p>
+                <h4>4.BlogsDope</h4>
+                <p>它是为数不多的印度开发者博客中，能够提供有价值信息的博客。它由
+                    Arun Kumar 创立，涵盖了大部分流行的编程语言。
+                    这个平台也有不少免费的课程供你选择。即使你是新手，也会有所受益。</p>
+                <p>地址：https://www.codesdope.com/blog/</p>
+                <h4>5.Coding Horror</h4>
+                <p>这个博客由 Jeff Atwood 创建于 2004 年，同时作为 StackOverFlow 的联合创始人，他还创立了 StackExchange 公司。
+                他的博客上有许多编程相关的文章，可以供你参考与学习。</p>
+                <p>地址：https://blog.codinghorror.com/</p>
+                <h4>6.TechieDelight</h4>
+                <p>TechieDelight 有超过 900 篇编程相关的文章，你还会发现一些代码片段、工具等实用的东西。如果你是 Java, C++ 等开发者，可以上去瞅瞅。</p>
+                <p>地址：http://www.techiedelight.com</p>
+                <h4>7.Sitepoint</h4>
+                <p>Sitepoint 作为程序员众所周知的网站之一，平台上已经提供了大约 240 多个电子书以及相关资源。博客主要涵盖 Wordpress，Web 和 JavaScript 等主题内容，同时它还有一个活跃的论坛，便于同行之间的互动与交流。</p>
+                <p>地址：https://www.sitepoint.com</p>
+                <h4>8.StickyMinds</h4>
+                <p>StickyMinds 是一个老牌的软件测试博客，始于 2001 年。它是软件测试人员，QA 专业人士的首选。任何对软件测试感兴趣的人都可以通过博客中文章，深入的了解最新的测试技术，并获得一些指导和建议。
+                如果你正从事软件测试工作，那么我强烈推荐这个博客给你。</p>
+                <p>地址：https://www.stickyminds.com/</p>
+            </div>
+        </div>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap">
+            <a href="/" class="nav-home">
+                <img src="https://jestjs.io/img/jest-outline.svg" alt="Jest" width="66" height="58">
+            </a>
+            <div>
+                <h5>Docs</h5>
+                <a href="#">Getting Started</a>
+                <a href="#">Guides</a>
+                <a href="#">API Reference</a>
+            </div>
+            <div>
+                <h5>Community</h5>
+                <a href="#" target="_blank">Stack Overflow</a>
+                <a href="#">Jest Chat</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+            <div>
+                <h5>More</h5>
+                <a href="#">Blog</a>
+                <a href="#">GitHub</a><span></span>
+            </div>
+        </section>
+        <section class="copyright">Copyright © 2018 Qzy Inc.</section>
+    </footer>
+</div>
+</body>
+</html>
