@@ -1,0 +1,245 @@
+<!-- <app-chat></app-chat> -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Whispark-Unsubscribe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<style>
+    h1,h2,h3,h4,p,html,body{margin: 0;padding: 0;}
+    .container{
+        width: 780px;
+        margin: 0 auto;
+    }
+    .clearfix::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .main header{
+        padding: 10px 0;
+    }
+    .main .logo{
+        display: block;
+        float: left;
+        width: 209px;
+        height: 69px;
+        background: url('./logo.png') no-repeat center center;
+        background-size: 100% 100%;
+    }
+    header .info{
+        float: right;
+        text-align: right;
+        font-size: 14px;
+        color: #999;
+        line-height: 18px;
+        padding-top: 17px;
+    }
+    section{
+        box-shadow: 0 0px 15px 2px #ddd;
+        border-radius: 15px;
+        background: -moz-linear-gradient(top, #fcbc3e, #f6b228);
+        background: -webkit-linear-gradient(top, #fcbc3e, #f6b228);
+        background: -o-linear-gradient(top, #fcbc3e, #f6b228);
+    }
+    section .box{
+        position: relative;
+        padding-top: 430px;
+        padding-bottom: 40px;
+        background: url('./bg.png') no-repeat top center;
+    }
+    .head-img{
+        position: absolute;
+        top: 216px;
+        left: 50%;
+        margin-left: -76px;
+        width: 152px;
+        height: 152px;
+        border: 4px solid #fff;
+        border-radius: 100%;
+    }
+    .head-img::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        border: 4px solid #fff;
+        opacity: .5;
+        bottom: -8px;
+        border-radius: 100%;
+    }
+    .head-img img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    .content{
+        width: 702px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 15px;
+        padding: 38px 30px 33px;
+        box-sizing: border-box; 
+        
+    }
+    .content .title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .content .desc{
+        font-size: 16px;
+        color: #333;
+        line-height: 30px;
+    }
+    .content .desc.weight{
+        font-weight: 600;
+    }
+    .content .desc .time{font-size: 18px;color: #f63;font-weight: 600;}
+    .content .desc .tps{background: #f63;font-size: 18px;color: #fff;height: 29px;line-height: 29px;
+        padding: 0 9px;display: inline-block;border-radius: 3px;}
+    .content .btn{position: relative;
+        display: inline-block;height: 42px;line-height: 42px;color: #fff;
+        background: -moz-linear-gradient(left, #3983f2, #4b63e1);
+        background: -webkit-linear-gradient(left, #3983f2, #4b63e1);
+        background: -o-linear-gradient(left, #3983f2, #4b63e1);
+        padding-left: 18px;
+        padding-right: 55px;text-decoration: none;
+        border-radius: 60px;cursor: pointer;
+        font-size: 16px;margin-top: 56px;}
+    .btn .arrorw{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        background: #2d3b87;
+        transform: rotate(45deg);
+    }
+    .btn .arrorw::after{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        background: #fff;
+        top: 12px;
+        right: 12px;
+    }
+    .btn .arrorw::before{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        top: 12px;
+        right: 12px;
+    }
+    .content .inner{
+        font-size: 15px;
+        line-height: 20px;
+        color: #333;
+        margin-top: 230px;
+        padding-right: 180px;
+    }
+    .birthday{
+        position: absolute;
+        bottom: 57px;
+        right: 62px;
+        width: 171px;
+        height: 157px;
+        background: url('./birthday.png') no-repeat center center;
+    }
+    footer{
+        font-size: 12px;
+        color: #999;
+        padding: 18px 10px 30px;
+        text-align: center;
+        line-height: 14px;
+    }
+    footer a{color: #3983f2;font-size: 14px;}
+    @media (max-width: 780px){
+        .container{
+            width: 100%;
+            min-width: 320px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+    }
+    @media (max-width: 740px){
+        .content{
+            width: calc(100% - 40px);
+        }
+        .content .inner{
+            margin-top: 180px;
+            padding-right: 138px;
+        }
+        .birthday{
+            right: 40px;
+        }
+    }
+    @media (max-width: 400px){
+        .content .title{
+            font-size: 17px;
+        }
+        .content .desc{
+            font-size: 13px;
+            line-height: 24px;
+        }
+        .content .desc .time{
+            font-size: 15px;
+        }
+        .content .desc .tps{
+            font-size: 15px;
+            height: 26px;
+            line-height: 26px;
+        }
+        .content .btn{
+            margin-top: 50px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <header class="clearfix">
+                <a href="https://test.whispark.com/" class="logo"></a>
+                <div class="info">
+                    <p>Please add "auto@whispark.net" to</p>
+                    <p>your address book to ensure delivery to your inbox.</p>
+                </div>
+            </header>
+            <section>
+                <div class="box">
+                    <div class="head-img">
+                        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4226468334,723383513&fm=26&gp=0.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Happy Birthday <span>XXXX</span>!</h3>
+                        <p class="desc">Whispark team remember your birthday is on <span class="time">2-14</span></p>
+                        <p class="desc">To sweeten it a little, we are giving you <span class="tps">5-day Free VIP Membership.</span></p>
+                        <p class="desc weight">Don’t miss the chance!</p>
+                        <a href="#" class="btn">Grab My Free Gift<span class="arrorw"></span></a>
+                        <div class="inner">
+                            <p>Wish you all the best in the year to come!</p>
+                            <p>Whispark Team</p>
+                        </div>
+                        <div class="birthday"></div>
+                    </div>
+                </div>
+            </section>
+            <footer>Please do not respond directly to this email. To contact us, Please visit our site and click the “<a>Contact Us</a>” link.</footer>
+        </div>
+    </div>
+</body>
+</html>
